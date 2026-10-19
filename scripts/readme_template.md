@@ -9,7 +9,7 @@
 A curated list of geometric algebra (Clifford algebra) neural networks, companion to the survey
 
 > **Geometric Algebra for Neural Networks: A Survey**<br>
-> Tao Zhong, Kaison Fong, Keqin Wang, Christine Allen-Blanchette<br>
+> [Tao Zhong](https://taozhong.info/), [Kaison Fong](https://www.linkedin.com/in/kaison-fong-153a51350/), [Keqin Wang](https://www.linkedin.com/in/wang-keqin-1b284618a/), [Christine Allen-Blanchette](https://cablab.scholar.princeton.edu/people)<br>
 > Princeton University, Stanford University<br>
 > arXiv: coming soon
 
