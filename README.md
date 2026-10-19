@@ -336,7 +336,7 @@ python3 -m http.server                                          # preview at htt
 
 `build_data.py` parses `main.bib`, scans `sec/*.tex` for every `\cite` (recording the section, subsection and sentence), extracts the survey tables and figure captions, and reads `main.bbl` so reference numbers match the PDF. Algebra tags and a few model names are curated in the script with a pointer to the supporting section or table.
 
-Deployment: `.github/workflows/pages.yml` publishes the repository root to GitHub Pages on every push to `main` (enable *Settings → Pages → Source: GitHub Actions*).
+Deployment: GitHub Pages serves the repository root from the `main` branch (*Settings → Pages → Deploy from a branch*), so every push to `main` updates the site.
 
 ## Citation
 
