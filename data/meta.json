@@ -1,0 +1,268 @@
+{
+ "figures": [
+  {
+   "file": "fig1_positioning",
+   "label": "fig:survey-positioning",
+   "caption": "Positioning of this survey relative to adjacent literatures. Existing surveys either treat GA broadly across applications or GDL broadly across formalisms; this survey focuses on GA-native neural networks while covering foundations, architectures, applications, empirical evidence, and software."
+  },
+  {
+   "file": "fig2_pipeline",
+   "label": "fig:ga-pipeline",
+   "caption": "Generic GA-native neural-network pipeline. The choice of algebra fixes the geometric vocabulary and symmetry bias; multivector embeddings are then processed by GA primitives and assembled into architecture families matched to downstream tasks."
+  },
+  {
+   "file": "fig3_equivariance",
+   "label": "fig:equivariance-diagram",
+   "caption": "Commutative view of equivariance. A NN layer is equivariant when transforming the input and then applying f_θ yields the same result as applying f_θ first and then transforming the output. Invariance is the special case with trivial output action."
+  },
+  {
+   "file": "fig4_motifs",
+   "label": "fig:ga-architecture-motifs",
+   "caption": "Canonical design motifs in GA-native architectures. Different model families reuse a shared set of GA primitives but combine them in distinct computational patterns."
+  },
+  {
+   "file": "fig5_appmap",
+   "label": "fig:application-map",
+   "caption": "Application-domain map for GA-native neural networks. The recurring pairings among domains, geometric demands, and algebra choices explain much of the current literature structure."
+  }
+ ],
+ "evidence_status": [
+  {
+   "label": "Established",
+   "text": "improved inductive alignment for tasks with explicit geometric symmetries, transformations, or multi-entity geometric relations."
+  },
+  {
+   "label": "Plausible but not yet general",
+   "text": "gains in data efficiency, robustness under distribution shift, and compactness through structured parameterization."
+  },
+  {
+   "label": "Currently unproven",
+   "text": "broad superiority on dense perception, large-scale vision backbones, or standardized foundation-model-scale settings."
+  }
+ ],
+ "benchmarking_practice": [
+  {
+   "label": "State the algebraic hypothesis",
+   "text": "Specify the algebra, target symmetry group, and whether equivariance is exact or approximate."
+  },
+  {
+   "label": "Use matched baselines",
+   "text": "Compare against both non-equivariant and strong equivariant baselines under matched parameter counts and training budgets."
+  },
+  {
+   "label": "Include symmetry stress tests",
+   "text": "Report transformed-input evaluations and state whether canonicalization was required."
+  },
+  {
+   "label": "Report low-data behavior",
+   "text": "Include learning curves or sub-sampling experiments when sample efficiency is claimed."
+  },
+  {
+   "label": "Report cost alongside accuracy",
+   "text": "At minimum: parameter count, training precision, wall-clock time, and peak memory."
+  },
+  {
+   "label": "Ablate the geometry",
+   "text": "Remove multivector channels, replace geometric products with linear mixing, or swap to a mismatched algebra."
+  },
+  {
+   "label": "Release reproducibility materials",
+   "text": "Code, splits, preprocessing, and evaluation scripts are essential for custom pipelines."
+  }
+ ],
+ "title": "Geometric Algebra for Neural Networks: A Survey",
+ "abstract": "Geometric algebra unifies geometric primitives and transformations in a single algebraic framework. Neural networks designed around this framework often represent features as multivectors and constrain layer operations to respect the algebraic structure, enabling principled treatment of geometric transformations and, in many cases, built-in equivariance. This survey reviews geometric algebra neural networks, including their building blocks, equivariant properties, application domains, empirical performance, and software support. We provide an algebra-selection guide, an empirical comparison of GA-based and other equivariant architectures, and a failure-mode analysis covering training pathologies, deployment constraints, and performance limitations. Across the surveyed literature, the strongest evidence for GA-based architectures appears in settings with explicit geometric symmetries and heterogeneous geometric entities; evidence for broader advantages in parameter efficiency, interpretability, and dense prediction is comparatively limited and uneven. We therefore conclude that geometric algebra neural networks are not universally superior to well-tuned non-GA equivariant baselines, and outline open problems in algebra selection, numerical stability, scalable implementation, and reproducible evaluation.",
+ "keywords": [
+  "Geometric algebra",
+  "Clifford algebra",
+  "geometric deep learning",
+  "equivariant neural networks",
+  "multivector representations",
+  "geometric transformations"
+ ],
+ "outline": [
+  {
+   "num": "1",
+   "title": "Introduction",
+   "short": "Introduction",
+   "subs": [
+    {
+     "num": "1.1",
+     "title": "Survey Methodology"
+    }
+   ]
+  },
+  {
+   "num": "2",
+   "title": "Foundational Concepts: GA for NNs",
+   "short": "Foundations",
+   "subs": [
+    {
+     "num": "2.1",
+     "title": "GA Fundamentals"
+    },
+    {
+     "num": "2.2",
+     "title": "Key Algebras"
+    },
+    {
+     "num": "2.3",
+     "title": "Representing Geometry and Transformations"
+    },
+    {
+     "num": "2.4",
+     "title": "Algebra Selection Guide"
+    }
+   ]
+  },
+  {
+   "num": "3",
+   "title": "GDL Principles: Equivariance and Symmetries",
+   "short": "Equivariance",
+   "subs": [
+    {
+     "num": "3.1",
+     "title": "Leveraging Symmetries in Deep Learning"
+    },
+    {
+     "num": "3.2",
+     "title": "Foundational Group Theory for Equivariance"
+    },
+    {
+     "num": "3.3",
+     "title": "Achieving Equivariance with Geometric Algebra"
+    },
+    {
+     "num": "3.4",
+     "title": "Comparison with Non-GA Equivariant Approaches"
+    },
+    {
+     "num": "3.5",
+     "title": "The Clifford Group and its Action in Equivariant Networks"
+    }
+   ]
+  },
+  {
+   "num": "4",
+   "title": "GA NN Layers",
+   "short": "Layers & architectures",
+   "subs": [
+    {
+     "num": "4.1",
+     "title": "Multivector Representations"
+    },
+    {
+     "num": "4.2",
+     "title": "GA-Parametrized Linear and Bilinear Layers"
+    },
+    {
+     "num": "4.3",
+     "title": "Transformation-based Layers"
+    },
+    {
+     "num": "4.4",
+     "title": "Activations and Normalizations"
+    },
+    {
+     "num": "4.5",
+     "title": "GA-based Attention Mechanisms"
+    },
+    {
+     "num": "4.6",
+     "title": "Building GA-NN Architectures"
+    }
+   ]
+  },
+  {
+   "num": "5",
+   "title": "Applications",
+   "short": "Applications",
+   "subs": [
+    {
+     "num": "5.1",
+     "title": "Computer Vision and Graphics"
+    },
+    {
+     "num": "5.2",
+     "title": "Computational Biology and Chemistry"
+    },
+    {
+     "num": "5.3",
+     "title": "Physics-Informed Machine Learning"
+    },
+    {
+     "num": "5.4",
+     "title": "Robotics"
+    },
+    {
+     "num": "5.5",
+     "title": "Other Notable Applications"
+    }
+   ]
+  },
+  {
+   "num": "6",
+   "title": "Empirical Studies",
+   "short": "Empirical evidence",
+   "subs": [
+    {
+     "num": "6.1",
+     "title": "What transfers across the literature"
+    },
+    {
+     "num": "6.2",
+     "title": "Comparative evidence by application family"
+    },
+    {
+     "num": "6.3",
+     "title": "Computational cost and scalability"
+    },
+    {
+     "num": "6.4",
+     "title": "Failure modes and limitations"
+    },
+    {
+     "num": "6.5",
+     "title": "Summary of evidence status"
+    },
+    {
+     "num": "6.6",
+     "title": "Recommended benchmarking practice"
+    }
+   ]
+  },
+  {
+   "num": "7",
+   "title": "Software Libraries and Implementation",
+   "short": "Software",
+   "subs": [
+    {
+     "num": "7.1",
+     "title": "ML Libraries: PyTorch, TensorFlow, and JAX"
+    },
+    {
+     "num": "7.2",
+     "title": "General Purpose Libraries"
+    },
+    {
+     "num": "7.3",
+     "title": "Challenges and Future Needs for Software Support"
+    }
+   ]
+  },
+  {
+   "num": "8",
+   "title": "Future Directions and Conclusion",
+   "short": "Outlook",
+   "subs": []
+  }
+ ],
+ "counts": {
+  "papers": 168,
+  "with_algebra": 42,
+  "years": [
+   1871,
+   2026
+  ]
+ }
+}

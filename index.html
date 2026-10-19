@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geometric Algebra for Neural Networks: A Survey</title>
+<meta name="description" content="Project page and interactive literature explorer for the survey “Geometric Algebra for Neural Networks” (CAB Lab, Princeton University).">
+<meta property="og:title" content="Geometric Algebra for Neural Networks: A Survey">
+<meta property="og:description" content="An interactive map of geometric-algebra neural networks: algebras, layers, applications, evidence and software.">
+<meta property="og:image" content="assets/figures/fig1_positioning.webp">
+<meta name="theme-color" content="#E77500">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script>
+  // apply the saved theme before first paint
+  try { const t = localStorage.getItem('gann-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#explorer">Skip to the paper explorer</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M5 20 L11 7 L24 7 L18 20 Z" fill="#E77500" fill-opacity=".18" stroke="#E77500" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 16.5 A6 6 0 1 1 18.5 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M15.6 14.2 L18.7 15.3 L19.6 12.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>GA&thinsp;for&thinsp;NNs</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#algebras">Algebras</a></li>
+        <li><a href="#explorer">Papers</a></li>
+        <li><a href="#architectures">Architectures</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#cite">Cite</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Geometric Algebra for Neural Networks: A Survey</h1>
+      <p class="authors">
+        <span>Tao Zhong<sup>1</sup></span>,
+        <span>Kaison Fong<sup>2</sup></span>,
+        <span>Keqin Wang<sup>1</sup></span>,
+        <span>Christine Allen-Blanchette<sup>1</sup></span>
+      </p>
+      <p class="affils"><sup>1</sup>Princeton University&ensp;<sup>2</sup>Stanford University</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#" aria-disabled="true" title="The arXiv version is coming soon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg>
+          Paper <span class="soon">arXiv soon</span>
+        </a>
+        <a class="btn" href="#" aria-disabled="true" title="The PDF will be linked once the preprint is public">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+          PDF
+        </a>
+        <button class="btn" type="button" data-copy="#bibtex" data-copied="BibTeX copied">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
+          BibTeX
+        </button>
+        <a class="btn" href="https://github.com/CAB-Lab-Princeton/AwesomeGANN">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <p class="hero-lede" id="tldr"></p>
+      <dl class="hero-stats" id="hero-stats"></dl>
+    </div>
+
+    <figure class="lattice" aria-labelledby="lattice-cap">
+      <div class="lattice-tabs" role="tablist" aria-label="Choose an algebra"></div>
+      <div class="lattice-stage" id="lattice-stage" aria-live="polite"></div>
+      <figcaption id="lattice-cap" class="lattice-cap"></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================== ABSTRACT ============================== -->
+<section class="band" id="abstract" aria-labelledby="abstract-h">
+  <div class="wrap two-col">
+    <div>
+      <h2 id="abstract-h">Abstract</h2>
+      <ul class="keywords" id="keywords" aria-label="Keywords"></ul>
+    </div>
+    <div class="prose">
+      <p id="abstract-text"></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <figure class="plate wide">
+      <img src="assets/figures/fig1_positioning.webp" width="1800" height="498" alt="Positioning diagram: broad GDL surveys, domain-specific GDL surveys and general GA surveys versus this survey, which is GA-native and deep, covering foundations, equivariance, architectures, applications, empirical evidence and software." loading="lazy">
+      <figcaption data-fig="fig1_positioning"></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================== ALGEBRA SELECTOR ============================== -->
+<section class="section" id="algebras" aria-labelledby="algebras-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="algebras-h">Which algebra fits your task?</h2>
+      <p class="lead">Pick the need that best describes your data. The recommendation, its rationale and the conditions to avoid it come straight from the survey’s algebra-selection guide (§2.4, Table&nbsp;2).</p>
+    </div>
+    <div class="selector">
+      <fieldset class="needs">
+        <legend class="sr-only">Primary task need</legend>
+        <div id="needs"></div>
+      </fieldset>
+      <article class="verdict" id="verdict" aria-live="polite"></article>
+    </div>
+    <p class="note" id="failure-note"></p>
+  </div>
+</section>
+
+<!-- ============================== EXPLORER ============================== -->
+<section class="section band" id="explorer" aria-labelledby="explorer-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="explorer-h">Paper explorer</h2>
+      <p class="lead">Every work the survey cites, tagged by where it is discussed. Filter by topic, algebra and year, or search titles, authors and model names. Each entry quotes the sentence the survey uses to place it.</p>
+    </div>
+
+    <div class="explorer">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <label class="search">
+          <span class="sr-only">Search papers</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <input type="search" id="q" placeholder="Search: GATr, protein, Lorentz…" autocomplete="off">
+        </label>
+        <button type="button" class="filters-toggle" aria-expanded="false" aria-controls="facets">Filters</button>
+
+        <div class="facets" id="facets">
+        <div class="facet">
+          <h3 class="facet-h">Survey section</h3>
+          <div class="chips" id="f-section"></div>
+          <div class="chips sub" id="f-sub" hidden></div>
+        </div>
+        <div class="facet">
+          <h3 class="facet-h">Algebra <button type="button" class="info" aria-describedby="alg-tip">?</button></h3>
+          <p class="facet-tip" id="alg-tip" role="tooltip">Algebra tags are added only where the survey text or tables state the algebra a work uses.</p>
+          <div class="chips" id="f-alg"></div>
+        </div>
+        <div class="facet">
+          <h3 class="facet-h">Year</h3>
+          <div class="years">
+            <label>From <select id="y0"></select></label>
+            <label>to <select id="y1"></select></label>
+          </div>
+        </div>
+        <div class="facet">
+          <label class="toggle"><input type="checkbox" id="f-table"> Appears in a survey table</label>
+          <label class="toggle"><input type="checkbox" id="f-community" checked> Include community additions</label>
+        </div>
+        <button type="button" class="link-btn" id="reset">Clear all filters</button>
+        </div>
+      </aside>
+
+      <div class="results-col">
+        <div class="results-bar">
+          <p class="count" id="count" aria-live="polite"></p>
+          <label class="sort">Sort
+            <select id="sort">
+              <option value="discussed">Most discussed</option>
+              <option value="n">Survey reference order</option>
+              <option value="new">Newest first</option>
+              <option value="old">Oldest first</option>
+              <option value="title">Title A–Z</option>
+            </select>
+          </label>
+        </div>
+        <div class="active-pin" id="pin" hidden></div>
+        <figure class="hist" aria-labelledby="hist-cap">
+          <div id="hist"></div>
+          <figcaption id="hist-cap">Cited works per year in the current selection. Click a bar to filter that year.</figcaption>
+        </figure>
+        <ol class="results" id="results"></ol>
+        <button type="button" class="btn more" id="more" hidden>Show more</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ARCHITECTURES ============================== -->
+<section class="section" id="architectures" aria-labelledby="arch-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="arch-h">Architecture families</h2>
+      <p class="lead">GA-native networks reuse a small set of primitives (grade projections, geometric products, versor actions, inner-product attention) and combine them into six families (§4, Table&nbsp;5). Open a family to see its representative works in the explorer.</p>
+    </div>
+    <div class="families" id="families"></div>
+
+    <figure class="plate wide">
+      <img src="assets/figures/fig4_motifs.webp" width="1800" height="562" alt="Canonical design motifs in GA-native architectures, showing how families combine shared GA primitives." loading="lazy">
+      <figcaption data-fig="fig4_motifs"></figcaption>
+    </figure>
+
+    <h3 class="sub-h">How each algebra encodes geometry</h3>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Object encodings table">
+      <table class="data" id="t-encodings"></table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== EVIDENCE ============================== -->
+<section class="section band" id="evidence" aria-labelledby="evidence-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="evidence-h">What the evidence supports</h2>
+      <p class="lead">Results are compared only within matched benchmark settings (§6, Table&nbsp;7). No setting yet reaches “Strong” by archival-survey standards.</p>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="evidence-tools" role="group" aria-label="Filter by evidence grade">
+      <button type="button" class="seg is-on" data-grade="all" aria-pressed="true">All settings</button>
+      <button type="button" class="seg" data-grade="Moderate" aria-pressed="false">Moderate</button>
+      <button type="button" class="seg" data-grade="Prelim." aria-pressed="false">Preliminary</button>
+    </div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Empirical evidence map">
+      <table class="data" id="t-evidence"></table>
+    </div>
+
+    <div class="two-col gap-top">
+      <div>
+        <h3 class="sub-h">When is GA worth it?</h3>
+        <p class="prose-sm">Equivariant paradigms compared along the dimensions that matter for architecture selection (§3.4, Table&nbsp;3). GA-native networks are the only paradigm with native support for both mixed geometric entities and join/meet operations; mature non-GA methods remain the stronger default when the symmetry and data type are already well matched.</p>
+      </div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Comparison of equivariant paradigms">
+        <table class="data compact" id="t-paradigms"></table>
+      </div>
+    </div>
+
+    <div class="practice">
+      <h3 class="sub-h">Recommended benchmarking practice</h3>
+      <ol id="practice"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOFTWARE ============================== -->
+<section class="section" id="software" aria-labelledby="software-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="software-h">Software</h2>
+      <p class="lead">Libraries for multivectors and Clifford operations (§7, Table&nbsp;8). Only the first group offers native deep-learning tensor support; the rest serve preprocessing, prototyping or performance-critical kernels.</p>
+    </div>
+    <div class="libs" id="libs"></div>
+  </div>
+</section>
+
+<!-- ============================== FIGURES ============================== -->
+<section class="section band" id="figures" aria-labelledby="figures-h">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="figures-h">Figures</h2>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+  <dialog class="lightbox" id="lightbox" aria-label="Figure viewer">
+    <form method="dialog"><button class="close" aria-label="Close figure">×</button></form>
+    <img alt="">
+    <p class="lb-cap"></p>
+  </dialog>
+</section>
+
+<!-- ============================== CITE + CONTRIBUTE ============================== -->
+<section class="section" id="cite" aria-labelledby="cite-h">
+  <div class="wrap two-col">
+    <div>
+      <h2 id="cite-h">Cite</h2>
+      <p class="prose-sm">If the survey or this explorer helps your work, please cite:</p>
+      <div class="code">
+        <button type="button" class="copy" data-copy="#bibtex" data-copied="Copied">Copy</button>
+<pre id="bibtex">@article{zhong2026geometric,
+  title   = {Geometric Algebra for Neural Networks: A Survey},
+  author  = {Zhong, Tao and Fong, Kaison and Wang, Keqin and
+             Allen-Blanchette, Christine},
+  journal = {arXiv preprint arXiv:TBD},
+  year    = {2026}
+}</pre>
+      </div>
+    </div>
+    <div id="contribute">
+      <h2>Add a paper</h2>
+      <p class="prose-sm">Missed a GA-native network, or published a new one? This page doubles as an awesome-list, and pull requests are welcome.</p>
+      <ol class="steps">
+        <li>Fork <a href="https://github.com/CAB-Lab-Princeton/AwesomeGANN">the repository</a>.</li>
+        <li>Append an entry to <code>data/community.json</code> with a title, authors, year, venue, link, and the algebra if it is GA-native.</li>
+        <li>Run <code>python3 scripts/build_readme.py</code> to refresh the README list, then open a pull request.</li>
+      </ol>
+      <p class="prose-sm">Community additions appear in the explorer with a “community” mark until they are reviewed for the next survey revision. Corrections to survey entries are best sent as an <a href="https://github.com/CAB-Lab-Princeton/AwesomeGANN/issues">issue</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a class="lab" href="https://cablab.scholar.princeton.edu/">
+      <img src="assets/cablab-logo.png" alt="" class="lab-logo" onerror="this.remove()">
+      <span><strong>CAB Lab</strong><br>Princeton University</span>
+    </a>
+    <p>Data generated from the survey sources by <code>scripts/build_data.py</code>. Code is MIT-licensed; the survey text and figures belong to the authors.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/app.js" defer></script>
+</body>
+</html>

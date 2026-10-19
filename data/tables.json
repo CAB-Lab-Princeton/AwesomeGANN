@@ -1,0 +1,2091 @@
+{
+ "tab:ga_compare": {
+  "caption": "Principal algebras used in GA-native neural networks. Canonical references are listed in the rightmost column.",
+  "header": [
+   "Algebra",
+   "Signature",
+   "Native symmetry",
+   "Native objects / actions",
+   "NN design takeaway",
+   "Representative works"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "EGA"
+     },
+     {
+      "text": "𝔾₃,₀,₀"
+     },
+     {
+      "text": "O(3)/SO(3)"
+     },
+     {
+      "text": "vectors, bivectors, rotors; rotations, reflections"
+     },
+     {
+      "text": "compact and stable; no native translations, often needs centering"
+     },
+     {
+      "text": "CGENN, GCAN",
+      "keys": [
+       "ruhe2023clifford",
+       "ruhe2023geometric"
+      ],
+      "items": [
+       {
+        "label": "CGENN",
+        "keys": [
+         "ruhe2023clifford"
+        ]
+       },
+       {
+        "label": "GCAN",
+        "keys": [
+         "ruhe2023geometric"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "PGA"
+     },
+     {
+      "text": "𝔾₃,₀,₁"
+     },
+     {
+      "text": "E(3)"
+     },
+     {
+      "text": "planes, lines, points, motors; rigid motions"
+     },
+     {
+      "text": "native isometries for meshes and poses; inner product not distance-aware"
+     },
+     {
+      "text": "GATr, GAGrasp",
+      "keys": [
+       "brehmer2023geometric",
+       "zhong2025gagrasp"
+      ],
+      "items": [
+       {
+        "label": "GATr",
+        "keys": [
+         "brehmer2023geometric"
+        ]
+       },
+       {
+        "label": "GAGrasp",
+        "keys": [
+         "zhong2025gagrasp"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "CGA"
+     },
+     {
+      "text": "𝔾₄,₁,₀"
+     },
+     {
+      "text": "conformal ⊃ E(3)"
+     },
+     {
+      "text": "null points, circles, spheres; dilations, inversions"
+     },
+     {
+      "text": "richest object vocabulary, distance-aware; 32 blades, indefinite metric"
+     },
+     {
+      "text": "CGA-PoseNet, C-GATr",
+      "keys": [
+       "pepe2024cgaposenet",
+       "de2024euclidean"
+      ],
+      "items": [
+       {
+        "label": "CGA-PoseNet",
+        "keys": [
+         "pepe2024cgaposenet"
+        ]
+       },
+       {
+        "label": "C-GATr",
+        "keys": [
+         "de2024euclidean"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "STA"
+     },
+     {
+      "text": "𝔾₁,₃,₀"
+     },
+     {
+      "text": "Lorentz"
+     },
+     {
+      "text": "events, bivectors, spinors; boosts"
+     },
+     {
+      "text": "natural for relativistic / Maxwell systems; not for Euclidean 3D tasks"
+     },
+     {
+      "text": "STAResNet, L-GATr",
+      "keys": [
+       "pepe2024staresnet",
+       "spinner2024lorentz"
+      ],
+      "items": [
+       {
+        "label": "STAResNet",
+        "keys": [
+         "pepe2024staresnet"
+        ]
+       },
+       {
+        "label": "L-GATr",
+        "keys": [
+         "spinner2024lorentz"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": [],
+  "file": "2-prelim"
+ },
+ "tab:algebra_decision": {
+  "caption": "Algebra-selection decision aid for GA-native neural network design. Each row corresponds to a primary task need; the recommended algebra, rationale, and avoidance conditions are synthesized from the surveyed literature.",
+  "header": [
+   "Task need",
+   "Prefer",
+   "Why",
+   "Avoid if",
+   "Representative tasks"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "Rotation-only features on centerable data"
+     },
+     {
+      "text": "EGA"
+     },
+     {
+      "text": "compact (8 blades), stable, well-supported"
+     },
+     {
+      "text": "translations matter; data cannot be centered"
+     },
+     {
+      "text": "PDE fields, O(3) molecular features"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Rigid-body tokens (positions + orientations)"
+     },
+     {
+      "text": "PGA"
+     },
+     {
+      "text": "native E(3) motors; 16 blades"
+     },
+     {
+      "text": "distance-aware attention is critical"
+     },
+     {
+      "text": "mesh regression, protein frames, grasps"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Distance-sensitive or conformal geometry"
+     },
+     {
+      "text": "CGA"
+     },
+     {
+      "text": "squared-distance inner product; circles, spheres as blades"
+     },
+     {
+      "text": "indefinite metric causes instability; 32-bit precision required"
+     },
+     {
+      "text": "pose regression, distance-aware attention"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Relativistic / Lorentz-covariant data"
+     },
+     {
+      "text": "STA"
+     },
+     {
+      "text": "native Lorentz group; spacetime split"
+     },
+     {
+      "text": "task is purely Euclidean 3D"
+     },
+     {
+      "text": "HEP jets, Maxwell surrogates"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Only scalar / categorical features; no geometric objects"
+     },
+     {
+      "text": "—"
+     },
+     {
+      "text": "GA adds overhead without representational benefit"
+     },
+     {
+      "text": "always"
+     },
+     {
+      "text": "tabular data, NLP, standard image classification"
+     }
+    ]
+   }
+  ],
+  "notes": [
+   "Common failure mode if misapplied: EGA, loses translations; PGA, cannot represent circles/spheres; CGA, unnecessary overhead for rigid geometry; STA, over-specialized for non-relativistic tasks."
+  ],
+  "file": "2-prelim"
+ },
+ "tab:non_ga_comparison": {
+  "caption": "Comparison of equivariant paradigms for geometric learning. GA-native networks are most attractive when heterogeneous geometric entities or non-standard symmetry groups are central to the task; mature non-GA methods often remain preferable when the symmetry and data type are already well matched.",
+  "header": [
+   "Paradigm",
+   "Latent repr.",
+   "Typical symmetry",
+   "Mixed entities?",
+   "Join / meet?",
+   "Software maturity",
+   "Best-fit regime",
+   "Limitations"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "Group-equiv. CNNs",
+      "keys": [
+       "cohen2016group"
+      ],
+      "items": [
+       {
+        "label": "Group-equiv. CNNs",
+        "keys": [
+         "cohen2016group"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "feature maps on group"
+     },
+     {
+      "text": "discrete / compact"
+     },
+     {
+      "text": "No"
+     },
+     {
+      "text": "No"
+     },
+     {
+      "text": "High"
+     },
+     {
+      "text": "grid data with known discrete symmetry"
+     },
+     {
+      "text": "fixed grid; limited to compact groups"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Steerable CNNs",
+      "keys": [
+       "cohen2016steerable"
+      ],
+      "items": [
+       {
+        "label": "Steerable CNNs",
+        "keys": [
+         "cohen2016steerable"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "irrep. fiber bundles"
+     },
+     {
+      "text": "SO(n), O(n), E(n)"
+     },
+     {
+      "text": "Partial"
+     },
+     {
+      "text": "No"
+     },
+     {
+      "text": "High"
+     },
+     {
+      "text": "continuous rotation equiv. on grids"
+     },
+     {
+      "text": "Clebsch–Gordan overhead; grid-based"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "TFN / SE(3)-Transf.",
+      "keys": [
+       "thomas2018tensor"
+      ],
+      "items": [
+       {
+        "label": "TFN / SE(3)-Transf.",
+        "keys": [
+         "thomas2018tensor"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "spherical tensors"
+     },
+     {
+      "text": "SE(3)"
+     },
+     {
+      "text": "Partial"
+     },
+     {
+      "text": "No"
+     },
+     {
+      "text": "Medium"
+     },
+     {
+      "text": "point clouds, molecules"
+     },
+     {
+      "text": "high-order tensor products expensive"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "E(n)-equiv. GNNs",
+      "keys": [
+       "satorras2021n"
+      ],
+      "items": [
+       {
+        "label": "E(n)-equiv. GNNs",
+        "keys": [
+         "satorras2021n"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "scalar + coord. vectors"
+     },
+     {
+      "text": "E(n)"
+     },
+     {
+      "text": "No"
+     },
+     {
+      "text": "No"
+     },
+     {
+      "text": "High"
+     },
+     {
+      "text": "molecular graphs, n-body"
+     },
+     {
+      "text": "limited to scalar & vector features"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Lie-group / pose nets"
+     },
+     {
+      "text": "Lie algebra elements"
+     },
+     {
+      "text": "SE(3), SO(3)"
+     },
+     {
+      "text": "Partial"
+     },
+     {
+      "text": "No"
+     },
+     {
+      "text": "Medium"
+     },
+     {
+      "text": "pose estimation, SLAM"
+     },
+     {
+      "text": "task-specific parametrizations"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "GA-native networks"
+     },
+     {
+      "text": "multivectors"
+     },
+     {
+      "text": "O(n), E(n), conformal, Lorentz"
+     },
+     {
+      "text": "Yes"
+     },
+     {
+      "text": "Yes"
+     },
+     {
+      "text": "Low–Med"
+     },
+     {
+      "text": "mixed objects, coupled fields, non-standard symmetries"
+     },
+     {
+      "text": "dim. overhead; numerical instability in CGA/STA"
+     }
+    ]
+   }
+  ],
+  "notes": [],
+  "file": "3-gdl"
+ },
+ "tab:ga_encodings": {
+  "caption": "Recurring object encodings in GA-native neural networks. The entries summarize common conventions; exact representations may vary with algebra conventions and implementation choices.",
+  "header": [
+   "Algebra",
+   "Point",
+   "Affine objects",
+   "Motion",
+   "Distance cue",
+   "Best-fit tasks",
+   "Representative works"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "EGA"
+     },
+     {
+      "text": "position vector (origin-relative)"
+     },
+     {
+      "text": "origin-passing subspaces"
+     },
+     {
+      "text": "rotors"
+     },
+     {
+      "text": "Euclidean norm"
+     },
+     {
+      "text": "rotation-aware features, PDE fields"
+     },
+     {
+      "text": "CGENN, Clifford layers",
+      "keys": [
+       "ruhe2023clifford",
+       "brandstetter2022clifford"
+      ],
+      "items": [
+       {
+        "label": "CGENN",
+        "keys": [
+         "ruhe2023clifford"
+        ]
+       },
+       {
+        "label": "Clifford layers",
+        "keys": [
+         "brandstetter2022clifford"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "PGA"
+     },
+     {
+      "text": "homog. trivector"
+     },
+     {
+      "text": "planes, lines, points"
+     },
+     {
+      "text": "motors"
+     },
+     {
+      "text": "not directly distance-aware"
+     },
+     {
+      "text": "SE(3) tokens, meshes, poses"
+     },
+     {
+      "text": "GATr, GAFL",
+      "keys": [
+       "brehmer2023geometric",
+       "wagner2024generating"
+      ],
+      "items": [
+       {
+        "label": "GATr",
+        "keys": [
+         "brehmer2023geometric"
+        ]
+       },
+       {
+        "label": "GAFL",
+        "keys": [
+         "wagner2024generating"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "CGA"
+     },
+     {
+      "text": "null-point embedding"
+     },
+     {
+      "text": "lines, circles, spheres"
+     },
+     {
+      "text": "versors / motors"
+     },
+     {
+      "text": "squared-dist. inner product"
+     },
+     {
+      "text": "distance-sensitive attention, richer geometry"
+     },
+     {
+      "text": "iP-GATr / C-GATr, CGA-PoseNet",
+      "keys": [
+       "de2024euclidean",
+       "pepe2024cgaposenet"
+      ],
+      "items": [
+       {
+        "label": "iP-GATr / C-GATr",
+        "keys": [
+         "de2024euclidean"
+        ]
+       },
+       {
+        "label": "CGA-PoseNet",
+        "keys": [
+         "pepe2024cgaposenet"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "STA"
+     },
+     {
+      "text": "event / 4-vector"
+     },
+     {
+      "text": "spacetime planes"
+     },
+     {
+      "text": "rotors / boosts"
+     },
+     {
+      "text": "Minkowski interval"
+     },
+     {
+      "text": "relativistic physics, HEP"
+     },
+     {
+      "text": "L-GATr, STAResNet",
+      "keys": [
+       "spinner2024lorentz",
+       "pepe2024staresnet"
+      ],
+      "items": [
+       {
+        "label": "L-GATr",
+        "keys": [
+         "spinner2024lorentz"
+        ]
+       },
+       {
+        "label": "STAResNet",
+        "keys": [
+         "pepe2024staresnet"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": [],
+  "file": "4-gann"
+ },
+ "tab:architecture_taxonomy": {
+  "caption": "Taxonomy of GA-native neural network families, with representative cited works.",
+  "header": [
+   "Family",
+   "Core GA primitive",
+   "Typical data",
+   "Symmetry",
+   "Representative works",
+   "Main caveat"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "Early Clifford MLPs"
+     },
+     {
+      "text": "multivector linear maps, adapted activations"
+     },
+     {
+      "text": "low-dim. signals"
+     },
+     {
+      "text": "limited"
+     },
+     {
+      "text": "Clifford MLPs",
+      "keys": [
+       "pearson2003clifford",
+       "buchholz2008clifford"
+      ],
+      "items": [
+       {
+        "label": "Clifford MLPs",
+        "keys": [
+         "pearson2003clifford",
+         "buchholz2008clifford"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "weak equivariance framing"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Equivariant blocks"
+     },
+     {
+      "text": "grade projections, geometric products, gating"
+     },
+     {
+      "text": "tokens, sets, graphs"
+     },
+     {
+      "text": "O(n), E(n)"
+     },
+     {
+      "text": "CGENN, GCAN, MVN/MVP, GLGENN",
+      "keys": [
+       "ruhe2023clifford",
+       "ruhe2023geometric",
+       "liu2024multivector",
+       "filimoshina2025glgenn"
+      ],
+      "items": [
+       {
+        "label": "CGENN",
+        "keys": [
+         "ruhe2023clifford"
+        ]
+       },
+       {
+        "label": "GCAN",
+        "keys": [
+         "ruhe2023geometric"
+        ]
+       },
+       {
+        "label": "MVN/MVP",
+        "keys": [
+         "liu2024multivector"
+        ]
+       },
+       {
+        "label": "GLGENN",
+        "keys": [
+         "filimoshina2025glgenn"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "cost grows with algebra dim."
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Clifford CNN / operator"
+     },
+     {
+      "text": "Clifford convolution, Fourier layers, GP kernels"
+     },
+     {
+      "text": "grids, fields, PDE states"
+     },
+     {
+      "text": "translation + geometric"
+     },
+     {
+      "text": "Clifford layers, CS-CNN, Fengbo, C-CSCNN",
+      "keys": [
+       "brandstetter2022clifford",
+       "zhdanov2024clifford",
+       "pepefengbo",
+       "szarvas2026conditional"
+      ],
+      "items": [
+       {
+        "label": "Clifford layers",
+        "keys": [
+         "brandstetter2022clifford"
+        ]
+       },
+       {
+        "label": "CS-CNN",
+        "keys": [
+         "zhdanov2024clifford"
+        ]
+       },
+       {
+        "label": "Fengbo",
+        "keys": [
+         "pepefengbo"
+        ]
+       },
+       {
+        "label": "C-CSCNN",
+        "keys": [
+         "szarvas2026conditional"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "specialized kernels"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Graph / simplicial"
+     },
+     {
+      "text": "multivector message passing, simplex GP features"
+     },
+     {
+      "text": "graphs, molecules, simplicial complexes"
+     },
+     {
+      "text": "perm. + O(n)/E(n)"
+     },
+     {
+      "text": "CSMPN, CG-EGNN, GGAN",
+      "keys": [
+       "liu2024clifford",
+       "tran2024clifford",
+       "zhong2025graph"
+      ],
+      "items": [
+       {
+        "label": "CSMPN",
+        "keys": [
+         "liu2024clifford"
+        ]
+       },
+       {
+        "label": "CG-EGNN",
+        "keys": [
+         "tran2024clifford"
+        ]
+       },
+       {
+        "label": "GGAN",
+        "keys": [
+         "zhong2025graph"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "fragmented benchmarks"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Transformer / attention"
+     },
+     {
+      "text": "GA inner-product attention, bilinear layers"
+     },
+     {
+      "text": "meshes, proteins, HEP events"
+     },
+     {
+      "text": "E(3), Lorentz"
+     },
+     {
+      "text": "GATr, iP-/C-GATr, L-GATr, CFA",
+      "keys": [
+       "brehmer2023geometric",
+       "de2024euclidean",
+       "spinner2024lorentz",
+       "wagner2024generating"
+      ],
+      "items": [
+       {
+        "label": "GATr",
+        "keys": [
+         "brehmer2023geometric"
+        ]
+       },
+       {
+        "label": "iP-/C-GATr",
+        "keys": [
+         "de2024euclidean"
+        ]
+       },
+       {
+        "label": "L-GATr",
+        "keys": [
+         "spinner2024lorentz"
+        ]
+       },
+       {
+        "label": "CFA",
+        "keys": [
+         "wagner2024generating"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "memory and norm. cost"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Generative / control"
+     },
+     {
+      "text": "motors, versor actions, equivariant diffusion"
+     },
+     {
+      "text": "poses, grasps, trajectories"
+     },
+     {
+      "text": "SE(3)/E(3)"
+     },
+     {
+      "text": "CGA-PoseNet, GAGrasp, hPGA-DP",
+      "keys": [
+       "pepe2024cgaposenet",
+       "zhong2025gagrasp",
+       "sun2025hybrid"
+      ],
+      "items": [
+       {
+        "label": "CGA-PoseNet",
+        "keys": [
+         "pepe2024cgaposenet"
+        ]
+       },
+       {
+        "label": "GAGrasp",
+        "keys": [
+         "zhong2025gagrasp"
+        ]
+       },
+       {
+        "label": "hPGA-DP",
+        "keys": [
+         "sun2025hybrid"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "narrow task scope"
+     }
+    ]
+   }
+  ],
+  "notes": [],
+  "file": "4-gann"
+ },
+ "tab:application_crosswalk": {
+  "caption": "Representative applications of GA-native neural networks, organized by domain. Cited works are representative.",
+  "header": [
+   "Domain",
+   "Geometry / symmetry",
+   "Algebra(s)",
+   "Canonical tasks",
+   "Representative works"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "Vision / pose"
+     },
+     {
+      "text": "point clouds, multi-view; rotation / rigid motion"
+     },
+     {
+      "text": "EGA, PGA, CGA"
+     },
+     {
+      "text": "camera pose regression, implicit volumes, hyperspectral classification"
+     },
+     {
+      "text": "CGA-PoseNet, GA-Planes, GA-CNN",
+      "keys": [
+       "pepe2024cgaposenet",
+       "sivgin2024geometric",
+       "li2022ga"
+      ],
+      "items": [
+       {
+        "label": "CGA-PoseNet",
+        "keys": [
+         "pepe2024cgaposenet"
+        ]
+       },
+       {
+        "label": "GA-Planes",
+        "keys": [
+         "sivgin2024geometric"
+        ]
+       },
+       {
+        "label": "GA-CNN",
+        "keys": [
+         "li2022ga"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Biomedical meshes"
+     },
+     {
+      "text": "3D anatomical surfaces; E(3) equivariance"
+     },
+     {
+      "text": "PGA"
+     },
+     {
+      "text": "wall shear stress estimation, aortic aneurysm growth, velocity field prediction"
+     },
+     {
+      "text": "GATr, LaB-GATr(++), iP-/C-GATr, AAA model, AB-GATr",
+      "keys": [
+       "brehmer2023geometric",
+       "suk2024lab",
+       "suk2024geometric",
+       "de2024euclidean",
+       "alblas2025geometric",
+       "rygiel2026when"
+      ],
+      "items": [
+       {
+        "label": "GATr",
+        "keys": [
+         "brehmer2023geometric"
+        ]
+       },
+       {
+        "label": "LaB-GATr(++)",
+        "keys": [
+         "suk2024lab",
+         "suk2024geometric"
+        ]
+       },
+       {
+        "label": "iP-/C-GATr",
+        "keys": [
+         "de2024euclidean"
+        ]
+       },
+       {
+        "label": "AAA model",
+        "keys": [
+         "alblas2025geometric"
+        ]
+       },
+       {
+        "label": "AB-GATr",
+        "keys": [
+         "rygiel2026when"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Molecules / proteins"
+     },
+     {
+      "text": "molecular graphs, residue frames; E(3), higher-order geometry"
+     },
+     {
+      "text": "PGA, EGA"
+     },
+     {
+      "text": "molecular dynamics (MD17), protein denoising, backbone generation"
+     },
+     {
+      "text": "CSMPN, GAFL, CDM, GA-GNN, CliffordIP",
+      "keys": [
+       "liu2024clifford",
+       "wagner2024generating",
+       "liu2025clifford",
+       "petersen2026design",
+       "polat2026cliffordip"
+      ],
+      "items": [
+       {
+        "label": "CSMPN",
+        "keys": [
+         "liu2024clifford"
+        ]
+       },
+       {
+        "label": "GAFL",
+        "keys": [
+         "wagner2024generating"
+        ]
+       },
+       {
+        "label": "CDM",
+        "keys": [
+         "liu2025clifford"
+        ]
+       },
+       {
+        "label": "GA-GNN",
+        "keys": [
+         "petersen2026design"
+        ]
+       },
+       {
+        "label": "CliffordIP",
+        "keys": [
+         "polat2026cliffordip"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Physics / PIML"
+     },
+     {
+      "text": "coupled fields, PDE states; field / Lorentz symmetry"
+     },
+     {
+      "text": "EGA, STA"
+     },
+     {
+      "text": "Navier–Stokes surrogates, Maxwell PDEs, LHC tasks"
+     },
+     {
+      "text": "Clifford layers, STAResNet, L-GATr",
+      "keys": [
+       "brandstetter2022clifford",
+       "pepe2024staresnet",
+       "spinner2024lorentz"
+      ],
+      "items": [
+       {
+        "label": "Clifford layers",
+        "keys": [
+         "brandstetter2022clifford"
+        ]
+       },
+       {
+        "label": "STAResNet",
+        "keys": [
+         "pepe2024staresnet"
+        ]
+       },
+       {
+        "label": "L-GATr",
+        "keys": [
+         "spinner2024lorentz"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Robotics / control"
+     },
+     {
+      "text": "poses, grasps; SE(3)"
+     },
+     {
+      "text": "PGA, CGA"
+     },
+     {
+      "text": "grasp generation, motion planning, visuomotor policy"
+     },
+     {
+      "text": "GAGrasp, hPGA-DP",
+      "keys": [
+       "zhong2025gagrasp",
+       "sun2025hybrid"
+      ],
+      "items": [
+       {
+        "label": "GAGrasp",
+        "keys": [
+         "zhong2025gagrasp"
+        ]
+       },
+       {
+        "label": "hPGA-DP",
+        "keys": [
+         "sun2025hybrid"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Graphs / time series"
+     },
+     {
+      "text": "graphs, simplicial complexes, multivariate series"
+     },
+     {
+      "text": "EGA, PGA"
+     },
+     {
+      "text": "graph learning, few-shot transfer, forecasting"
+     },
+     {
+      "text": "GGAN, CG-EGNN, GA-LSTNet",
+      "keys": [
+       "zhong2025graph",
+       "tran2024clifford",
+       "li2022geometric"
+      ],
+      "items": [
+       {
+        "label": "GGAN",
+        "keys": [
+         "zhong2025graph"
+        ]
+       },
+       {
+        "label": "CG-EGNN",
+        "keys": [
+         "tran2024clifford"
+        ]
+       },
+       {
+        "label": "GA-LSTNet",
+        "keys": [
+         "li2022geometric"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": [],
+  "file": "5-apps"
+ },
+ "tab:empirical_matrix": {
+  "caption": "Empirical evidence map for GA-native neural networks, organized by matched benchmark setting. Each row is a within-task comparison unit; cross-row comparisons are intentionally avoided. The Evidence column grades each setting as Moderate (replicated gains on established benchmarks, but confounds or limited independent replication remain) or Preliminary (too few matched studies or too recent for confident conclusions). No setting currently reaches “Strong” by strict archival-survey standards.",
+  "header": [
+   "Matched setting",
+   "GA works",
+   "Comparator class",
+   "Strongest supported claim",
+   "Evidence",
+   "Scope limit"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "Synthetic n-body dynamics"
+     },
+     {
+      "text": "GATr, iP-/C-GATr, GCAN",
+      "keys": [
+       "brehmer2023geometric",
+       "de2024euclidean",
+       "ruhe2023geometric"
+      ],
+      "items": [
+       {
+        "label": "GATr",
+        "keys": [
+         "brehmer2023geometric"
+        ]
+       },
+       {
+        "label": "iP-/C-GATr",
+        "keys": [
+         "de2024euclidean"
+        ]
+       },
+       {
+        "label": "GCAN",
+        "keys": [
+         "ruhe2023geometric"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "SEGNN, SE(3)-Transf."
+     },
+     {
+      "text": "sample efficiency; robustness to translation shift"
+     },
+     {
+      "text": "Moderate"
+     },
+     {
+      "text": "synthetic only"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Arterial WSS / biomed. meshes"
+     },
+     {
+      "text": "GATr, LaB-GATr(++), iP-/C-GATr, AB-GATr",
+      "keys": [
+       "brehmer2023geometric",
+       "suk2024lab",
+       "suk2024geometric",
+       "de2024euclidean",
+       "rygiel2026when"
+      ],
+      "items": [
+       {
+        "label": "GATr",
+        "keys": [
+         "brehmer2023geometric"
+        ]
+       },
+       {
+        "label": "LaB-GATr(++)",
+        "keys": [
+         "suk2024lab",
+         "suk2024geometric"
+        ]
+       },
+       {
+        "label": "iP-/C-GATr",
+        "keys": [
+         "de2024euclidean"
+        ]
+       },
+       {
+        "label": "AB-GATr",
+        "keys": [
+         "rygiel2026when"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "mesh GDL, algebra ablations"
+     },
+     {
+      "text": "accuracy on non-canon. meshes; sample efficiency"
+     },
+     {
+      "text": "Moderate"
+     },
+     {
+      "text": "biomed. mesh only"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Navier–Stokes / weather / Maxwell"
+     },
+     {
+      "text": "Clifford layers, GCAN, STAResNet, C-CSCNN",
+      "keys": [
+       "brandstetter2022clifford",
+       "ruhe2023geometric",
+       "pepe2024staresnet",
+       "szarvas2026conditional"
+      ],
+      "items": [
+       {
+        "label": "Clifford layers",
+        "keys": [
+         "brandstetter2022clifford"
+        ]
+       },
+       {
+        "label": "GCAN",
+        "keys": [
+         "ruhe2023geometric"
+        ]
+       },
+       {
+        "label": "STAResNet",
+        "keys": [
+         "pepe2024staresnet"
+        ]
+       },
+       {
+        "label": "C-CSCNN",
+        "keys": [
+         "szarvas2026conditional"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "CNN, FNO, operator baselines"
+     },
+     {
+      "text": "param. efficiency; matched-algebra advantage"
+     },
+     {
+      "text": "Moderate"
+     },
+     {
+      "text": "PDE-specific"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "HEP regression / classif. / generation"
+     },
+     {
+      "text": "L-GATr",
+      "keys": [
+       "spinner2024lorentz",
+       "brehmer2024lorentz",
+       "favaro2026virtues"
+      ],
+      "items": [
+       {
+        "label": "L-GATr",
+        "keys": [
+         "spinner2024lorentz",
+         "brehmer2024lorentz",
+         "favaro2026virtues"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Lorentz-equiv. and standard HEP baselines"
+     },
+     {
+      "text": "competitive or superior accuracy; Lorentz faithfulness"
+     },
+     {
+      "text": "Moderate"
+     },
+     {
+      "text": "HEP only"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "MD17 / protein denoising / higher-order"
+     },
+     {
+      "text": "CSMPN, CG-EGNN, MVN",
+      "keys": [
+       "liu2024clifford",
+       "tran2024clifford",
+       "liu2024multivector"
+      ],
+      "items": [
+       {
+        "label": "CSMPN",
+        "keys": [
+         "liu2024clifford"
+        ]
+       },
+       {
+        "label": "CG-EGNN",
+        "keys": [
+         "tran2024clifford"
+        ]
+       },
+       {
+        "label": "MVN",
+        "keys": [
+         "liu2024multivector"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "EGNN, higher-order GNNs"
+     },
+     {
+      "text": "higher-order geometry benefit; negative result on benzene"
+     },
+     {
+      "text": "Moderate"
+     },
+     {
+      "text": "benchmark-local"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Protein backbone generation"
+     },
+     {
+      "text": "GAFL / CFA",
+      "keys": [
+       "wagner2024generating"
+      ],
+      "items": [
+       {
+        "label": "GAFL / CFA",
+        "keys": [
+         "wagner2024generating"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "structure-aware protein baselines"
+     },
+     {
+      "text": "designability, diversity, novelty"
+     },
+     {
+      "text": "Prelim."
+     },
+     {
+      "text": "not comparable to prediction"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Camera pose regression"
+     },
+     {
+      "text": "CGA-PoseNet",
+      "keys": [
+       "pepe2024cgaposenet"
+      ],
+      "items": [
+       {
+        "label": "CGA-PoseNet",
+        "keys": [
+         "pepe2024cgaposenet"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "pose-regression baselines"
+     },
+     {
+      "text": "accuracy, parameter efficiency"
+     },
+     {
+      "text": "Prelim."
+     },
+     {
+      "text": "pose studies only"
+     }
+    ]
+   },
+   {
+    "cells": [
+     {
+      "text": "Grasp / visuomotor control"
+     },
+     {
+      "text": "GAGrasp, hPGA-DP",
+      "keys": [
+       "zhong2025gagrasp",
+       "sun2025hybrid"
+      ],
+      "items": [
+       {
+        "label": "GAGrasp",
+        "keys": [
+         "zhong2025gagrasp"
+        ]
+       },
+       {
+        "label": "hPGA-DP",
+        "keys": [
+         "sun2025hybrid"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "diffusion / policy baselines"
+     },
+     {
+      "text": "data efficiency, SE(3) generalization"
+     },
+     {
+      "text": "Prelim."
+     },
+     {
+      "text": "robotics; task-local"
+     }
+    ]
+   }
+  ],
+  "notes": [],
+  "file": "6-experiments"
+ },
+ "tab:software_ecosystem": {
+  "caption": "Software ecosystem relevant to GA-native neural networks (as of 2026). “DL” marks libraries with native deep-learning tensor support; the remainder are usable for preprocessing or non-DL computation.",
+  "header": [
+   "Library",
+   "Lang. / Framework",
+   "DL",
+   "Algebra scope",
+   "Primary use case"
+  ],
+  "rows": [
+   {
+    "cells": [
+     {
+      "text": "torch_ga",
+      "keys": [
+       "torch_ga"
+      ],
+      "items": [
+       {
+        "label": "torch_ga",
+        "keys": [
+         "torch_ga"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Python / PyTorch"
+     },
+     {
+      "text": "✓"
+     },
+     {
+      "text": "tensor multivectors"
+     },
+     {
+      "text": "rapid GA layer prototyping"
+     }
+    ],
+    "group": "ML-facing libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "tfga",
+      "keys": [
+       "python_tfga"
+      ],
+      "items": [
+       {
+        "label": "tfga",
+        "keys": [
+         "python_tfga"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Python / TensorFlow"
+     },
+     {
+      "text": "✓"
+     },
+     {
+      "text": "tensor multivectors"
+     },
+     {
+      "text": "Keras-style GA experiments"
+     }
+    ],
+    "group": "ML-facing libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "numga",
+      "keys": [
+       "numga"
+      ],
+      "items": [
+       {
+        "label": "numga",
+        "keys": [
+         "numga"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Python / JAX"
+     },
+     {
+      "text": "✓"
+     },
+     {
+      "text": "symbolic + numerical, ≤6D"
+     },
+     {
+      "text": "operator-fused algebra kernels"
+     }
+    ],
+    "group": "ML-facing libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "lgatr",
+      "keys": [
+       "lgatr"
+      ],
+      "items": [
+       {
+        "label": "lgatr",
+        "keys": [
+         "lgatr"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Python / PyTorch"
+     },
+     {
+      "text": "✓"
+     },
+     {
+      "text": "STA 𝔾₁,₃,₀ (L-GATr)"
+     },
+     {
+      "text": "Lorentz-equivariant transformers for HEP"
+     }
+    ],
+    "group": "ML-facing libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "clifford",
+      "keys": [
+       "python_clifford"
+      ],
+      "items": [
+       {
+        "label": "clifford",
+        "keys": [
+         "python_clifford"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Python"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "broad common algebras"
+     },
+     {
+      "text": "preprocessing, general GA computation"
+     }
+    ],
+    "group": "General-purpose scripting tooling"
+   },
+   {
+    "cells": [
+     {
+      "text": "Kingdon",
+      "keys": [
+       "roelfs2025willingkingdoncliffordalgebra"
+      ],
+      "items": [
+       {
+        "label": "Kingdon",
+        "keys": [
+         "roelfs2025willingkingdoncliffordalgebra"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Python"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "symbolic + numerical"
+     },
+     {
+      "text": "mixed symbolic / numerical prototyping"
+     }
+    ],
+    "group": "General-purpose scripting tooling"
+   },
+   {
+    "cells": [
+     {
+      "text": "ganja.js",
+      "keys": [
+       "ganja.js"
+      ],
+      "items": [
+       {
+        "label": "ganja.js",
+        "keys": [
+         "ganja.js"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "JavaScript"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "code-generated, broad"
+     },
+     {
+      "text": "pedagogy, visualization, code export"
+     }
+    ],
+    "group": "General-purpose scripting tooling"
+   },
+   {
+    "cells": [
+     {
+      "text": "Versor",
+      "keys": [
+       "colapinto2011versor"
+      ],
+      "items": [
+       {
+        "label": "Versor",
+        "keys": [
+         "colapinto2011versor"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "C++"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "EGA, PGA, CGA, STA"
+     },
+     {
+      "text": "performance-sensitive geometry engines"
+     }
+    ],
+    "group": "Compiled / systems libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "GATL",
+      "keys": [
+       "fernandes-SEMA-13-2021"
+      ],
+      "items": [
+       {
+        "label": "GATL",
+        "keys": [
+         "fernandes-SEMA-13-2021"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "C++"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "arbitrary algebras"
+     },
+     {
+      "text": "compile-time-optimized kernels"
+     }
+    ],
+    "group": "Compiled / systems libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "Klein",
+      "keys": [
+       "Klein"
+      ],
+      "items": [
+       {
+        "label": "Klein",
+        "keys": [
+         "Klein"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "C++"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "3D PGA only"
+     },
+     {
+      "text": "SIMD-optimized rigid-body PGA"
+     }
+    ],
+    "group": "Compiled / systems libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "Gaalop",
+      "keys": [
+       "Gaalop"
+      ],
+      "items": [
+       {
+        "label": "Gaalop",
+        "keys": [
+         "Gaalop"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "Java / codegen"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "compiled GA expressions"
+     },
+     {
+      "text": "high-performance generated kernels"
+     }
+    ],
+    "group": "Compiled / systems libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "Garamon",
+      "keys": [
+       "breuils_garamon_2019"
+      ],
+      "items": [
+       {
+        "label": "Garamon",
+        "keys": [
+         "breuils_garamon_2019"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "C++ generator"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "user-defined algebras"
+     },
+     {
+      "text": "custom or uncommon algebras"
+     }
+    ],
+    "group": "Compiled / systems libraries"
+   },
+   {
+    "cells": [
+     {
+      "text": "TbGAL",
+      "keys": [
+       "sousa2020tbgal"
+      ],
+      "items": [
+       {
+        "label": "TbGAL",
+        "keys": [
+         "sousa2020tbgal"
+        ]
+       }
+      ]
+     },
+     {
+      "text": "C++ tensor-based"
+     },
+     {
+      "text": ""
+     },
+     {
+      "text": "blade / versor repr."
+     },
+     {
+      "text": "high-dimensional performance studies"
+     }
+    ],
+    "group": "Compiled / systems libraries"
+   }
+  ],
+  "notes": [],
+  "file": "7-lib"
+ }
+}
