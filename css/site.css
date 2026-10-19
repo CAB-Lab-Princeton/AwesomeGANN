@@ -377,7 +377,14 @@ a.lib:hover { border-color: var(--orange); }
 .footer p { margin: 0; font-size: .9rem; color: var(--muted); max-width: 62ch; }
 .lab { display: flex; gap: 14px; align-items: center; text-decoration: none; color: var(--ink); font: 400 14px/1.35 var(--sans); }
 .lab strong { font-weight: 600; }
-.lab-logo { height: 52px; width: auto; }
+.lab-logo { height: 44px; width: auto; }
+.lab-logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .lab-logo-light { display: none; }
+  :root:not([data-theme="light"]) .lab-logo-dark { display: inline; }
+}
+:root[data-theme="dark"] .lab-logo-light { display: none; }
+:root[data-theme="dark"] .lab-logo-dark { display: inline; }
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); background: var(--ink); color: var(--paper); font: 500 14px var(--sans); padding: 10px 16px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 80; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 

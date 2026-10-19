@@ -1,3 +1,5 @@
+<p align="right"><a href="https://cablab.scholar.princeton.edu/"><img src="assets/cablab-logo.png" alt="CAB Lab, Princeton University" width="190"></a></p>
+
 # Awesome Geometric Algebra Neural Networks
 
 [![Project page](https://img.shields.io/badge/project%20page-live-E77500)]({{SITE}})

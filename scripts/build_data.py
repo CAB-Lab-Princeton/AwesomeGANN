@@ -291,6 +291,10 @@ def sentences_with_cites(par):
     return out
 
 
+# IEEE-style numbering, as printed in the survey (Section III-B)
+ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+
+
 def scan_sections(survey):
     """Return citation contexts and the section outline."""
     contexts = {}       # key -> list of {sec, sub, num, text}
@@ -313,12 +317,12 @@ def scan_sections(survey):
                 if kind == "section":
                     sec_n += 1
                     sub_n = 0
-                    cur_sec, cur_sub, cur_num = title, None, f"{sec_n}"
+                    cur_sec, cur_sub, cur_num = title, None, ROMAN[sec_n]
                     outline.append({"num": cur_num, "title": title,
                                     "short": SECTION_SHORT.get(title, title), "subs": []})
                 elif kind == "subsection":
                     sub_n += 1
-                    cur_sub, cur_num = title, f"{sec_n}.{sub_n}"
+                    cur_sub, cur_num = title, f"{ROMAN[sec_n]}-{chr(64 + sub_n)}"
                     outline[-1]["subs"].append({"num": cur_num, "title": title})
                 continue
             if cur_sec is None:
@@ -387,15 +391,15 @@ def extract_names(survey):
 
 # Names the survey gives in prose or tables that the regex above misses.
 NAME_EXTRA = {
-    "suk2024lab": ["LaB-GATr"],                  # §5.2 "Suk et al. propose LaB-GATr"
-    "pepefengbo": ["Fengbo"],                    # §5.3, Table 5
-    "spellings2021geometric": ["GAAN"],          # §5.2 "Geometric Algebra Attention Networks (GAANs)"
-    "huy2026versor": ["Versor"],                 # §4.6
+    "suk2024lab": ["LaB-GATr"],                  # §V-B "Suk et al. propose LaB-GATr"
+    "pepefengbo": ["Fengbo"],                    # §V-C, Table 5
+    "spellings2021geometric": ["GAAN"],          # §V-B "Geometric Algebra Attention Networks (GAANs)"
+    "huy2026versor": ["Versor"],                 # §IV-F
     "brandstetter2022clifford": ["Clifford layers"],  # Tables 4-7
     "alblas2025geometric": ["AAA model"],        # Table 6
-    "rao2024enhanced": ["SNGNN-BTGO"],           # §5.2
-    "hockey2024simplifying": ["CGA Transformer"],  # §5.2
-    "grassucci2022phnns": ["PHNN"],              # §5.5 "Parametrized Hypercomplex NNs"
+    "rao2024enhanced": ["SNGNN-BTGO"],           # §V-B
+    "hockey2024simplifying": ["CGA Transformer"],  # §V-B
+    "grassucci2022phnns": ["PHNN"],              # §V-E "Parametrized Hypercomplex NNs"
     "thomas2018tensor": ["TFN"],                 # Table 3
     "pearson2003clifford": ["Clifford MLP"],     # Table 5
     "torch_ga": ["torch_ga"], "python_tfga": ["tfga"], "numga": ["numga"], "lgatr": ["lgatr"],
@@ -411,45 +415,45 @@ NAME_EXTRA = {
 
 ALGEBRA_TAGS = {
     "ruhe2023clifford": (["EGA"], "Table 1 (EGA row) and Table 4 (EGA encodings)"),
-    "ruhe2023geometric": (["EGA", "PGA"], "Table 1 (EGA row); §2.2 PGA paragraph; §4.6 G(3,0,0) examples"),
-    "brehmer2023geometric": (["PGA"], "Table 1 (PGA row); §3.3; §4.6"),
-    "zhong2025gagrasp": (["PGA"], "Table 1 (PGA row); §5.4"),
-    "pepe2024cgaposenet": (["CGA"], "Table 1 (CGA row); §5.1"),
-    "pepe2023cga": (["CGA"], "§5.1"),
-    "de2024euclidean": (["EGA", "PGA", "CGA"], "§4.6 E-/P-/iP-/C-GATr variants"),
-    "pepe2024staresnet": (["STA"], "Table 1 (STA row); §5.3"),
-    "spinner2024lorentz": (["STA"], "Table 1 (STA row); §3.3; §5.3"),
-    "brehmer2024lorentz": (["STA"], "§3.3; §4.6 (L-GATr in G(1,3,0))"),
+    "ruhe2023geometric": (["EGA", "PGA"], "Table 1 (EGA row); §II-B PGA paragraph; §IV-F G(3,0,0) examples"),
+    "brehmer2023geometric": (["PGA"], "Table 1 (PGA row); §III-C; §IV-F"),
+    "zhong2025gagrasp": (["PGA"], "Table 1 (PGA row); §V-D"),
+    "pepe2024cgaposenet": (["CGA"], "Table 1 (CGA row); §V-A"),
+    "pepe2023cga": (["CGA"], "§V-A"),
+    "de2024euclidean": (["EGA", "PGA", "CGA"], "§IV-F E-/P-/iP-/C-GATr variants"),
+    "pepe2024staresnet": (["STA"], "Table 1 (STA row); §V-C"),
+    "spinner2024lorentz": (["STA"], "Table 1 (STA row); §III-C; §V-C"),
+    "brehmer2024lorentz": (["STA"], "§III-C; §IV-F (L-GATr in G(1,3,0))"),
     "favaro2026virtues": (["STA"], "Table 7 HEP row (L-GATr)"),
-    "bresopla2026encoding": (["STA"], "§6.2 (L-GATr)"),
-    "petitjean2025economical": (["STA"], "§6.4 (L-GATr jet taggers)"),
+    "bresopla2026encoding": (["STA"], "§VI-B (L-GATr)"),
+    "petitjean2025economical": (["STA"], "§VI-D (L-GATr jet taggers)"),
     "lgatr": (["STA"], "Table 8 (STA G(1,3,0))"),
     "brandstetter2022clifford": (["EGA"], "Table 4 (EGA row, Clifford layers)"),
-    "wagner2024generating": (["PGA"], "Table 4 (PGA row); §5.2 CFA uses PGA"),
-    "suk2024lab": (["PGA"], "§5.2 embeds meshes in PGA G(3,0,1)"),
-    "suk2024geometric": (["PGA"], "§3.3 PGA-style models; Table 6 biomedical row"),
+    "wagner2024generating": (["PGA"], "Table 4 (PGA row); §V-B CFA uses PGA"),
+    "suk2024lab": (["PGA"], "§V-B embeds meshes in PGA G(3,0,1)"),
+    "suk2024geometric": (["PGA"], "§III-C PGA-style models; Table 6 biomedical row"),
     "alblas2025geometric": (["PGA"], "Table 6 biomedical-mesh row (PGA)"),
     "rygiel2026when": (["PGA"], "Table 6 biomedical-mesh row (PGA)"),
-    "sun2025hybrid": (["PGA"], "§3.3 PGA-style models; §5.4 PGA-GATr"),
-    "xu2026efficient": (["PGA"], "§5.4 2D PGA G(2,0,1)"),
-    "10.1007/978-3-031-55985-3_6": (["CGA"], "§5.2 backbone modelled in CGA"),
-    "hockey2024simplifying": (["CGA"], "§5.2 CGA Transformer"),
-    "kolyvakis2025geometric": (["CGA"], "§5.1 integrates CGA with language models"),
-    "huy2026versor": (["CGA"], "§4.6 replaces sequence operations with CGA"),
-    "sveier2017object": (["CGA"], "§4.1 null-point embedding; §5.1 RANSAC detection"),
-    "du2017modeling": (["CGA"], "§5.1 CGA primitive detection"),
-    "kanatani2015understanding": (["CGA"], "§5.1 CGA primitive detection"),
-    "zaplana2022closed": (["CGA"], "§5.4 CGA inverse kinematics"),
-    "fu2013solution": (["CGA"], "§5.4 CGA inverse kinematics"),
-    "zhu2025conformal": (["CGA"], "§5.4 kinematics as chains of motors (CGA)"),
-    "pepe2024clifford": (["EGA"], "§5.2 Euclidean GA for protein structure prediction"),
-    "polat2026cliffordip": (["EGA"], "§5.2 G(3,0,0) interatomic potentials"),
-    "polat2026geometric": (["EGA"], "§6.4 G(3,0,0) products"),
-    "liu2024clifford": (["General"], "§3.5 Clifford-group equivariant simplicial networks"),
-    "liu2024multivector": (["General"], "§3.5 O(n)-equivariant multivector functions"),
-    "zhdanov2024clifford": (["General"], "§4.6 pseudo-Euclidean E(p,q) equivariance"),
-    "ali2024metric": (["General"], "§3.5 learned quadratic form"),
-    "filimoshina2025glgenn": (["General"], "§3.5 generalized Lipschitz groups incl. degenerate algebras"),
+    "sun2025hybrid": (["PGA"], "§III-C PGA-style models; §V-D PGA-GATr"),
+    "xu2026efficient": (["PGA"], "§V-D 2D PGA G(2,0,1)"),
+    "10.1007/978-3-031-55985-3_6": (["CGA"], "§V-B backbone modelled in CGA"),
+    "hockey2024simplifying": (["CGA"], "§V-B CGA Transformer"),
+    "kolyvakis2025geometric": (["CGA"], "§V-A integrates CGA with language models"),
+    "huy2026versor": (["CGA"], "§IV-F replaces sequence operations with CGA"),
+    "sveier2017object": (["CGA"], "§IV-A null-point embedding; §V-A RANSAC detection"),
+    "du2017modeling": (["CGA"], "§V-A CGA primitive detection"),
+    "kanatani2015understanding": (["CGA"], "§V-A CGA primitive detection"),
+    "zaplana2022closed": (["CGA"], "§V-D CGA inverse kinematics"),
+    "fu2013solution": (["CGA"], "§V-D CGA inverse kinematics"),
+    "zhu2025conformal": (["CGA"], "§V-D kinematics as chains of motors (CGA)"),
+    "pepe2024clifford": (["EGA"], "§V-B Euclidean GA for protein structure prediction"),
+    "polat2026cliffordip": (["EGA"], "§V-B G(3,0,0) interatomic potentials"),
+    "polat2026geometric": (["EGA"], "§VI-D G(3,0,0) products"),
+    "liu2024clifford": (["General"], "§III-E Clifford-group equivariant simplicial networks"),
+    "liu2024multivector": (["General"], "§III-E O(n)-equivariant multivector functions"),
+    "zhdanov2024clifford": (["General"], "§IV-F pseudo-Euclidean E(p,q) equivariance"),
+    "ali2024metric": (["General"], "§III-E learned quadratic form"),
+    "filimoshina2025glgenn": (["General"], "§III-E generalized Lipschitz groups incl. degenerate algebras"),
     "colapinto2011versor": (["EGA", "PGA", "CGA", "STA"], "Table 8 algebra scope"),
     "Klein": (["PGA"], "Table 8 (3D PGA only)"),
 }

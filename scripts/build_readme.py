@@ -35,12 +35,13 @@ def entry(p):
     algs = " ".join(f"`{a if a != 'General' else 'Clifford'}`" for a in p.get("algebras", []))
     extra = [l for l in p.get("links", [])[1:] if l["kind"] in ("Code", "arXiv", "DOI")]
     more = " " + " ".join(f"[[{l['kind']}]]({l['url']})" for l in extra) if extra else ""
+    who = who.rstrip(".")
     line = f"- {title}.{names} {who}. *{md_escape(', '.join(bits))}*" if bits else f"- {title}.{names} {who}."
     return (line + (f" {algs}" if algs else "") + more).rstrip()
 
 
 def meta_short(meta, sub_label):
-    num = sub_label.split(" ")[0].split(".")[0]
+    num = sub_label.split(" ")[0].split("-")[0]
     return next((o["short"] for o in meta["outline"] if o["num"] == num), "")
 
 
@@ -65,7 +66,7 @@ def main():
             home[p["key"]] = secs[0] if secs else "Introduction"
     for o in meta["outline"]:
         sec_items = [p for p in papers if home[p["key"]] == o["short"]
-                     or home[p["key"]].split(" ")[0].split(".")[0] == o["num"] and "." in home[p["key"]].split(" ")[0]]
+                     or home[p["key"]].split(" ")[0].split("-")[0] == o["num"] and "-" in home[p["key"]].split(" ")[0]]
         if not sec_items:
             continue
         anchor = f"{o['num']}-{o['short']}".lower().replace(" & ", "--").replace(" ", "-")

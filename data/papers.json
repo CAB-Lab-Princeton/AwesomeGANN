@@ -28,7 +28,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Neural networks (NNs) have achieved broad success across perception and representation learning, but they often treat geometric data through scalar or tensor parameterizations that obscure its underlying structure."
    }
   ]
@@ -61,7 +61,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Neural networks (NNs) have achieved broad success across perception and representation learning, but they often treat geometric data through scalar or tensor parameterizations that obscure its underlying structure."
    }
   ]
@@ -94,7 +94,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Neural networks (NNs) have achieved broad success across perception and representation learning, but they often treat geometric data through scalar or tensor parameterizations that obscure its underlying structure."
    }
   ]
@@ -124,18 +124,18 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning"
+   "III-A Leveraging Symmetries in Deep Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Neural networks (NNs) have achieved broad success across perception and representation learning, but they often treat geometric data through scalar or tensor parameterizations that obscure its underlying structure."
    },
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "Incorporating known symmetries into neural architectures is a central strategy in GDL. Translation equivariance in convolutional networks, rotation equivariance in geometric and structural models, and permutation invariance or equivariance in point-set and graph models illustrate how architectural constraints can improve data efficiency, generalization under transformations, and robustness."
    }
   ]
@@ -171,11 +171,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "When such information is flattened into unstructured feature vectors, relationships such as incidence, orientation, metric structure, and transformation equivariance are no longer explicit."
    },
    {
-    "num": "1",
+    "num": "I",
     "text": "Graph neural networks (GNNs) operate on relational and non-Euclidean data, while group-equivariant and steerable convolutional networks encode prescribed transformation laws for images, volumetric fields, and related grid-structured signals."
    }
   ]
@@ -203,8 +203,8 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "3.4 Comparison with Non-GA Equivariant Approaches"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "III-D Comparison with Non-GA Equivariant Approaches"
   ],
   "tables": [
    "tab:non_ga_comparison"
@@ -213,15 +213,15 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "As a result, models may require extensive data augmentation to approximate basic symmetries, generalize poorly to unseen geometric configurations, and provide limited insight into the geometric computations they perform."
    },
    {
-    "num": "1",
+    "num": "I",
     "text": "Graph neural networks (GNNs) operate on relational and non-Euclidean data, while group-equivariant and steerable convolutional networks encode prescribed transformation laws for images, volumetric fields, and related grid-structured signals."
    },
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "GA-native models should therefore be understood as one route to geometry-aware learning, alongside non-GA equivariant approaches such as group-equivariant CNNs, steerable CNNs, Tensor Field Networks, and E(n)-equivariant GNNs."
    }
   ]
@@ -253,7 +253,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "As a result, models may require extensive data augmentation to approximate basic symmetries, generalize poorly to unseen geometric configurations, and provide limited insight into the geometric computations they perform."
    }
   ]
@@ -288,7 +288,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "As a result, models may require extensive data augmentation to approximate basic symmetries, generalize poorly to unseen geometric configurations, and provide limited insight into the geometric computations they perform."
    }
   ]
@@ -322,11 +322,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "As a result, models may require extensive data augmentation to approximate basic symmetries, generalize poorly to unseen geometric configurations, and provide limited insight into the geometric computations they perform."
    },
    {
-    "num": "1",
+    "num": "I",
     "text": "Graph neural networks (GNNs) operate on relational and non-Euclidean data, while group-equivariant and steerable convolutional networks encode prescribed transformation laws for images, volumetric fields, and related grid-structured signals."
    }
   ]
@@ -361,7 +361,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "As a result, models may require extensive data augmentation to approximate basic symmetries, generalize poorly to unseen geometric configurations, and provide limited insight into the geometric computations they perform."
    }
   ]
@@ -390,18 +390,18 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Clifford algebra, often called geometric algebra (GA) in applied settings, offers a compelling response to this representational fragmentation."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Conformal GA (CGA) 𝔾₄,₁,₀ embeds 3D Euclidean space into a 5D space with 2⁵=32 basis blades by introducing two additional directions, often represented through origin and infinity null vectors o and ∞."
    }
   ]
@@ -429,18 +429,18 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Clifford algebra, often called geometric algebra (GA) in applied settings, offers a compelling response to this representational fragmentation."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Tasks involving rigid motions or incidence relations among affine objects therefore often require an augmented algebra such as PGA or CGA."
    }
   ]
@@ -471,7 +471,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Clifford algebra, often called geometric algebra (GA) in applied settings, offers a compelling response to this representational fragmentation."
    }
   ]
@@ -499,18 +499,18 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Clifford algebra, often called geometric algebra (GA) in applied settings, offers a compelling response to this representational fragmentation."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Spacetime Algebra (STA) 𝔾₁,₃,₀ models Minkowski spacetime using one timelike direction and three spacelike directions, with e₀²=1 and eₖ²=-1 for k=1,2,3."
    }
   ]
@@ -546,22 +546,22 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "1.1 Survey Methodology",
-   "2.2 Key Algebras",
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.1 Multivector Representations",
-   "4.2 GA-Parametrized Linear and Bilinear Layers",
-   "4.4 Activations and Normalizations",
-   "4.5 GA-based Attention Mechanisms",
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.2 Computational Biology and Chemistry",
-   "5.4 Robotics",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family",
-   "6.3 Computational cost and scalability"
+   "I-A Survey Methodology",
+   "II-B Key Algebras",
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-A Multivector Representations",
+   "IV-B GA-Parametrized Linear and Bilinear Layers",
+   "IV-D Activations and Normalizations",
+   "IV-E GA-based Attention Mechanisms",
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-B Computational Biology and Chemistry",
+   "V-D Robotics",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family",
+   "VI-C Computational cost and scalability"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -573,22 +573,22 @@
   "algebras": [
    "PGA"
   ],
-  "algebra_source": "Table 1 (PGA row); §3.3; §4.6",
+  "algebra_source": "Table 1 (PGA row); §III-C; §IV-F",
   "contexts": [
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "The Geometric Algebra Transformer (GATr) and related models are among the architectures that use PGA-style multivectors for E(3)- or SE(3)-structured learning."
    },
    {
-    "num": "4.1",
+    "num": "IV-A",
     "text": "This makes PGA a natural choice for architectures such as GATr, which process point clouds or meshes without manual centering."
    },
    {
-    "num": "4.2",
+    "num": "IV-B",
     "text": "Later architectures, such as GATr, extend this idea by allowing selected equivariant maps between grades when mediated by algebraically meaningful elements."
    },
    {
-    "num": "4.2",
+    "num": "IV-B",
     "text": "Geometric-product layers, used in models such as CGENN, GATr, and related architectures, compute products between input multivectors or multivector channels."
    }
   ]
@@ -625,17 +625,17 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "2.2 Key Algebras",
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.3 Transformation-based Layers",
-   "4.4 Activations and Normalizations",
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.3 Physics-Informed Machine Learning",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family",
-   "6.3 Computational cost and scalability"
+   "II-B Key Algebras",
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-C Transformation-based Layers",
+   "IV-D Activations and Normalizations",
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-C Physics-Informed Machine Learning",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family",
+   "VI-C Computational cost and scalability"
   ],
   "tables": [
    "tab:architecture_taxonomy",
@@ -646,22 +646,22 @@
    "EGA",
    "PGA"
   ],
-  "algebra_source": "Table 1 (EGA row); §2.2 PGA paragraph; §4.6 G(3,0,0) examples",
+  "algebra_source": "Table 1 (EGA row); §II-B PGA paragraph; §IV-F G(3,0,0) examples",
   "contexts": [
    {
-    "num": "4.3",
+    "num": "IV-C",
     "text": "More generally, GCAN introduces group-action layers, that learn a combinations of prescribed group actions: T(x) = Σ_i w_i ḑot a_i x a_i, where a_i are learnable versors or group elements and w_i are scalar weights."
    },
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "MSiLU in GCANs applies a sigmoid gate to each k-vector component of a multivector independently: σ(fₖ (x)) ḑot ⟨ x ångleₖ, where fₖ(x) is a learnable scalar function of x."
    },
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "CGENNs and GCANs use variants of GroupNorm or custom norm-based schemes that normalize each k-vector component of a multivector across channels, again preserving the grade structure by only involving subtraction of an average k-vector and scalar division/multiplication."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "As discussed in earlier sections, Geometric Clifford Algebra Networks (GCANs) represent a significant step towards leveraging the geometric power of GA in a principled way."
    }
   ]
@@ -693,8 +693,8 @@
    "Applications"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures",
-   "5.3 Physics-Informed Machine Learning"
+   "IV-F Building GA-NN Architectures",
+   "V-C Physics-Informed Machine Learning"
   ],
   "tables": [
    "tab:architecture_taxonomy"
@@ -703,11 +703,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.3",
+    "num": "V-C",
     "text": "The Fengbo model, for instance, is a Clifford Neural Operator pipeline designed for 3D CFD. It conceptualizes the problem as an interpretable mapping from the geometry of the domain (represented as a multivector) to the physics of the solution (the resulting multivector-valued pressure and velocity field)."
    },
    {
-    "num": "1",
+    "num": "I",
     "text": "In selected settings, these priors have been associated with improved data efficiency and more interpretable intermediate representations."
    }
   ]
@@ -737,22 +737,22 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning"
+   "III-A Leveraging Symmetries in Deep Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Research on GA-based neural networks has grown rapidly alongside geometric deep learning (GDL), which seeks to encode geometric priors and symmetries directly into model architectures."
    },
    {
-    "num": "3",
+    "num": "III",
     "text": "Following the Erlangen-inspired perspective of Bronstein et al., a learning problem is characterized by the transformations under which predictions should be invariant or equivariant."
    },
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "Incorporating known symmetries into neural architectures is a central strategy in GDL. Translation equivariance in convolutional networks, rotation equivariance in geometric and structural models, and permutation invariance or equivariance in point-set and graph models illustrate how architectural constraints can improve data efficiency, generalization under transformations, and robustness."
    }
   ]
@@ -790,15 +790,15 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.1 Multivector Representations",
-   "4.2 GA-Parametrized Linear and Bilinear Layers",
-   "4.5 GA-based Attention Mechanisms",
-   "4.6 Building GA-NN Architectures",
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications",
-   "6.2 Comparative evidence by application family"
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-A Multivector Representations",
+   "IV-B GA-Parametrized Linear and Bilinear Layers",
+   "IV-E GA-based Attention Mechanisms",
+   "IV-F Building GA-NN Architectures",
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -809,22 +809,22 @@
   "algebras": [
    "PGA"
   ],
-  "algebra_source": "Table 4 (PGA row); §5.2 CFA uses PGA",
+  "algebra_source": "Table 4 (PGA row); §V-B CFA uses PGA",
   "contexts": [
    {
-    "num": "4.5",
+    "num": "IV-E",
     "text": "Clifford Frame Attention (CFA) extends the Invariant Point Attention (IPA) from AlphaFold2 for protein design."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Wagner et al. introduce Geometric Algebra Flow Matching (GAFL) for protein backbone design."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "GAFL reports strong generative metrics for backbone design."
    },
    {
-    "num": "1",
+    "num": "I",
     "text": "Recent GA-native models have appeared across biology, physics, and computer science, reflecting the appeal of GA as a common language for structured geometric computation."
    }
   ]
@@ -857,8 +857,8 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications"
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications"
   ],
   "tables": [
    "tab:application_crosswalk"
@@ -867,15 +867,15 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "For 3D molecular generation, Liu et al. propose Clifford Diffusion Models (CDMs)."
    },
    {
-    "num": "1",
+    "num": "I",
     "text": "Recent GA-native models have appeared across biology, physics, and computer science, reflecting the appeal of GA as a common language for structured geometric computation."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "GA's 3D equivariance, ability to encode higher-order geometry, and parameter efficiency make it a natural fit for computational biology and chemistry."
    }
   ]
@@ -911,7 +911,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Recent GA-native models have appeared across biology, physics, and computer science, reflecting the appeal of GA as a common language for structured geometric computation."
    }
   ]
@@ -948,18 +948,18 @@
    "Outlook"
   ],
   "subsections": [
-   "1.1 Survey Methodology",
-   "2.2 Key Algebras",
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.5 The Clifford Group and its Action in Equivariant Networks",
-   "4.1 Multivector Representations",
-   "4.2 GA-Parametrized Linear and Bilinear Layers",
-   "4.4 Activations and Normalizations",
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.2 Computational Biology and Chemistry",
-   "6.1 What transfers across the literature",
-   "7.3 Challenges and Future Needs for Software Support"
+   "I-A Survey Methodology",
+   "II-B Key Algebras",
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-E The Clifford Group and its Action in Equivariant Networks",
+   "IV-A Multivector Representations",
+   "IV-B GA-Parametrized Linear and Bilinear Layers",
+   "IV-D Activations and Normalizations",
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-B Computational Biology and Chemistry",
+   "VI-A What transfers across the literature",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:architecture_taxonomy",
@@ -972,19 +972,19 @@
   "algebra_source": "Table 1 (EGA row) and Table 4 (EGA encodings)",
   "contexts": [
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "CGENNs exploit this structure by constructing layers from operations that commute with the Clifford-group action."
    },
    {
-    "num": "4.2",
+    "num": "IV-B",
     "text": "CGENN shows that a Clifford-group-equivariant linear map φ(V,q)i̊ghtarrow Cl(V,q) can be parameterized by learnable scalar weights applied independently to grade projections: equation φ (x) = Σₖ wₖ ⟨ x ångleₖ, equation where ⟨ x ångleₖ denotes the grade-k component of x and wₖ ∈ ℝ are learnable parameters."
    },
    {
-    "num": "4.2",
+    "num": "IV-B",
     "text": "Geometric-product layers, used in models such as CGENN, GATr, and related architectures, compute products between input multivectors or multivector channels."
    },
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "Similarly, in CGENNs, this takes the form σ (‖ ⟨ x ångleₖ V̊ert²) ⟨ x ångleₖ for each non-scalar grade k, where the norm is invariant under the group action."
    }
   ]
@@ -1012,8 +1012,8 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "3.4 Comparison with Non-GA Equivariant Approaches"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "III-D Comparison with Non-GA Equivariant Approaches"
   ],
   "tables": [
    "tab:non_ga_comparison"
@@ -1022,15 +1022,15 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "Graph neural networks (GNNs) operate on relational and non-Euclidean data, while group-equivariant and steerable convolutional networks encode prescribed transformation laws for images, volumetric fields, and related grid-structured signals."
    },
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "GA-native models should therefore be understood as one route to geometry-aware learning, alongside non-GA equivariant approaches such as group-equivariant CNNs, steerable CNNs, Tensor Field Networks, and E(n)-equivariant GNNs."
    },
    {
-    "num": "3.4",
+    "num": "III-D",
     "text": "enumerate[leftmargin=*,itemsep=1pt] Standard E(3) tasks with scalar/vector point features. When the data consists of point clouds or graphs with primarily scalar and vector attributes and the target symmetry is E(3), mature non-GA methods, particularly E(n)-equivariant GNNs and steerable or tensor-field architectures, are strong defaults with well-optimized software stacks."
    }
   ]
@@ -1062,10 +1062,10 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "4.1 Multivector Representations",
-   "4.6 Building GA-NN Architectures",
-   "5.5 Other Notable Applications",
-   "6.2 Comparative evidence by application family"
+   "IV-A Multivector Representations",
+   "IV-F Building GA-NN Architectures",
+   "V-E Other Notable Applications",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -1075,19 +1075,19 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "In graph representation learning, GGAN generalizes message passing to a GA-defined feature space, encoding node attributes as multivectors and reporting improved expressiveness with reduced model complexity."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "GGAN reports strong graph-representation-learning results with reduced model complexity, and GA-LSTNet argues that multivector recurrent states improve multivariate time-series modeling by preserving inter-channel structure."
    },
    {
-    "num": "1",
+    "num": "I",
     "text": "This perspective has been instantiated across graphs, point clouds, manifolds, and fields."
    },
    {
-    "num": "4.1",
+    "num": "IV-A",
     "text": "For graph-structured data, node, edge, or simplex features can be represented as multivectors."
    }
   ]
@@ -1115,18 +1115,18 @@
    "Applications"
   ],
   "subsections": [
-   "5.5 Other Notable Applications"
+   "V-E Other Notable Applications"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "This perspective has been instantiated across graphs, point clouds, manifolds, and fields."
    },
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "GA embeddings have also been applied to cross-domain few-shot graph classification, where the geometric richness helps reduce feature distortion at depth."
    }
   ]
@@ -1158,18 +1158,18 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "This perspective has been instantiated across graphs, point clouds, manifolds, and fields."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "CGENN and GATr treat points as tokens processed by fully equivariant layers, and recent work explores GA for generative tasks such as point cloud upsampling."
    }
   ]
@@ -1201,7 +1201,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "This perspective has been instantiated across graphs, point clouds, manifolds, and fields."
    }
   ]
@@ -1234,7 +1234,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1268,7 +1268,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1301,7 +1301,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1335,7 +1335,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1366,7 +1366,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1398,7 +1398,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1433,7 +1433,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1472,7 +1472,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1504,7 +1504,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "1",
+    "num": "I",
     "text": "In contrast to general GA surveys and broader GDL surveys, we emphasize GA-native architectures and synthesize empirical conclusions only when methods are compared on shared tasks, datasets, and metrics."
    }
   ]
@@ -1539,15 +1539,15 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "1.1 Survey Methodology",
-   "3.5 The Clifford Group and its Action in Equivariant Networks",
-   "4.1 Multivector Representations",
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.3 Physics-Informed Machine Learning",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family"
+   "I-A Survey Methodology",
+   "III-E The Clifford Group and its Action in Equivariant Networks",
+   "IV-A Multivector Representations",
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-C Physics-Informed Machine Learning",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -1561,19 +1561,19 @@
   "algebra_source": "Table 4 (EGA row, Clifford layers)",
   "contexts": [
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "Ali et al. learn the underlying quadratic form while preserving Clifford-equivariant structure; Liu et al. use related polynomial constructions in simplicial architectures; Brandstetter et al. apply Clifford layers to PDE modeling; and Liu et al. implement grade-structured polynomial multivector functions for O(n)-equivariant architectures."
    },
    {
-    "num": "1.1",
+    "num": "I-A",
     "text": "We also performed backward and forward citation tracking from foundational GA-NN papers."
    },
    {
-    "num": "4.1",
+    "num": "IV-A",
     "text": "In computational fluid dynamics, a scalar pressure field p(x) and vector velocity field u(x) can be represented as a single multivector field M(x)=p(x)+u(x), allowing Clifford convolutional layers to process coupled scalar-vector quantities jointly."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Clifford Convolutions replace scalar-valued kernels with multivector-valued kernels that are convolved with multivector feature fields using the geometric product."
    }
   ]
@@ -1600,14 +1600,14 @@
    "Foundations"
   ],
   "subsections": [
-   "2.1 GA Fundamentals"
+   "II-A GA Fundamentals"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.1",
+    "num": "II-A",
     "text": "The geometric product of basis vectors satisfies e_i e_j=-e_j e_i."
    }
   ]
@@ -1643,19 +1643,19 @@
    "Outlook"
   ],
   "subsections": [
-   "2.2 Key Algebras",
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.1 Multivector Representations",
-   "4.2 GA-Parametrized Linear and Bilinear Layers",
-   "4.4 Activations and Normalizations",
-   "4.5 GA-based Attention Mechanisms",
-   "4.6 Building GA-NN Architectures",
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family",
-   "6.3 Computational cost and scalability",
-   "6.4 Failure modes and limitations"
+   "II-B Key Algebras",
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-A Multivector Representations",
+   "IV-B GA-Parametrized Linear and Bilinear Layers",
+   "IV-D Activations and Normalizations",
+   "IV-E GA-based Attention Mechanisms",
+   "IV-F Building GA-NN Architectures",
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family",
+   "VI-C Computational cost and scalability",
+   "VI-D Failure modes and limitations"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -1669,22 +1669,22 @@
    "PGA",
    "CGA"
   ],
-  "algebra_source": "§4.6 E-/P-/iP-/C-GATr variants",
+  "algebra_source": "§IV-F E-/P-/iP-/C-GATr variants",
   "contexts": [
    {
-    "num": "4.5",
+    "num": "IV-E",
     "text": "To address this, iP-GATr and C-GATr implement distance-aware attention by mapping the point-representing multivectors from PGA to CGA and using this CGA inner product to compute attention scores."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Follow-up work explored variants of GATr using EGA (E-GATr), a simpler PGA (P-GATr), an improved PGA (iP-GATr, similar to the original GATr), and CGA (C-GATr)."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Separately, de Haan et al. proposed several GATr variants (E-GATr, P-GATr, iP-GATr, and C-GATr) and tested them on the WSS prediction task."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "They found all variants beat baselines, with the distance-aware C-GATr and iP-GATr performing best."
    }
   ]
@@ -1717,11 +1717,11 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "2.2 Key Algebras",
-   "4.1 Multivector Representations",
-   "5.3 Physics-Informed Machine Learning",
-   "5.5 Other Notable Applications",
-   "6.2 Comparative evidence by application family"
+   "II-B Key Algebras",
+   "IV-A Multivector Representations",
+   "V-C Physics-Informed Machine Learning",
+   "V-E Other Notable Applications",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -1732,22 +1732,22 @@
   "algebras": [
    "STA"
   ],
-  "algebra_source": "Table 1 (STA row); §5.3",
+  "algebra_source": "Table 1 (STA row); §V-C",
   "contexts": [
    {
-    "num": "5.3",
+    "num": "V-C",
     "text": "STAResNet directly tackles the problem of solving Maxwell's partial differential equations."
    },
    {
-    "num": "5.3",
+    "num": "V-C",
     "text": "Pepe et al. compare a standard Clifford ResNet using Euclidean GA (𝔾₃,₀,₀) against their STAResNet, which operates natively in STA. The Euclidean model must learn from the \"split\" 3D vector and scalar time representation, whereas STAResNet operates directly on the unified STA multivector F = E + IB and achieves a lower error with significantly fewer parameters."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "STAResNet is especially informative: under a controlled comparison, the STA variant reaches up to 2.6× lower MSE with 6× fewer parameters than a Euclidean-GA ResNet on Maxwell prediction."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Selecting the appropriate algebra therefore remains an active design question: EGA is compact but lacks native translations, PGA represents rigid motions naturally, CGA adds conformal and distance-aware structure at higher dimension, and STA is tailored to Lorentzian geometry."
    }
   ]
@@ -1774,14 +1774,14 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Selecting the appropriate algebra therefore remains an active design question: EGA is compact but lacks native translations, PGA represents rigid motions naturally, CGA adds conformal and distance-aware structure at higher dimension, and STA is tailored to Lorentzian geometry."
    }
   ]
@@ -1814,15 +1814,15 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "2.2 Key Algebras",
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.4 Activations and Normalizations",
-   "4.6 Building GA-NN Architectures",
-   "5.4 Robotics",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family"
+   "II-B Key Algebras",
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-D Activations and Normalizations",
+   "IV-F Building GA-NN Architectures",
+   "V-D Robotics",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -1833,22 +1833,22 @@
   "algebras": [
    "PGA"
   ],
-  "algebra_source": "Table 1 (PGA row); §5.4",
+  "algebra_source": "Table 1 (PGA row); §V-D",
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "GAGrasp uses PGA (𝔾₃,₀,₁) to represent SE(3) transformations in a diffusion model for dexterous grasp generation, achieving robust generalization to novel poses while significantly outperforming non-equivariant baselines."
    },
    {
-    "num": "6.1",
+    "num": "VI-A",
     "text": "In robotics, GAGrasp and hPGA-DP report faster convergence or stronger low-data behavior, though only within their own benchmarks."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "GAGrasp reports better pose generalization and stronger efficiency for dexterous grasp generation under SE(3) transformations."
    },
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "In favorable settings, this can reduce reliance on data augmentation and improve sample efficiency."
    }
   ]
@@ -1882,13 +1882,13 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "2.2 Key Algebras",
-   "4.1 Multivector Representations",
-   "4.3 Transformation-based Layers",
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature"
+   "II-B Key Algebras",
+   "IV-A Multivector Representations",
+   "IV-C Transformation-based Layers",
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -1900,22 +1900,22 @@
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "Table 1 (CGA row); §5.1",
+  "algebra_source": "Table 1 (CGA row); §V-A",
   "contexts": [
    {
-    "num": "4.3",
+    "num": "IV-C",
     "text": "CGA-PoseNet uses this idea by designing layers where the inputs, outputs, weights and biases are represented as motors."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "CGAPoseNet+GCAN adds GCAN layers for equivariance, further reducing errors with fewer parameters."
    },
    {
-    "num": "6.1",
+    "num": "VI-A",
     "text": "CGENN-based protein models and CGA-PoseNet variants argue that motors, residue frames, or grade-structured channels are easier to inspect than unconstrained Euclidean features, but the field still lacks controlled interpretability benchmarks."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "Pepe et al. use CGA (𝔾₍₄,₀₎) to represent SE(3) pose as a motor, an 8-parameter even-grade multivector encoding both rotation and translation, improving accuracy over Cartesian parametrizations."
    }
   ]
@@ -1952,15 +1952,15 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "2.2 Key Algebras",
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.1 Multivector Representations",
-   "4.6 Building GA-NN Architectures",
-   "5.3 Physics-Informed Machine Learning",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family"
+   "II-B Key Algebras",
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-A Multivector Representations",
+   "IV-F Building GA-NN Architectures",
+   "V-C Physics-Informed Machine Learning",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -1972,22 +1972,22 @@
   "algebras": [
    "STA"
   ],
-  "algebra_source": "Table 1 (STA row); §3.3; §5.3",
+  "algebra_source": "Table 1 (STA row); §III-C; §V-C",
   "contexts": [
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "Neural networks built using STA or Lorentzian GA variants, such as L-GATr, can be made equivariant to Lorentz transformations, which is central in relativistic physics."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "It introduces new equivariant layers (linear maps, attention, LayerNorm) specifically designed for STA. L-GATr has shown state-of-the-art results in high-energy physics applications, including amplitude regression, jet classification, and as the basis for Lorentz-equivariant generative models."
    },
    {
-    "num": "5.3",
+    "num": "V-C",
     "text": "Spinner et al. propose L-GATr that operates entirely in Spacetime Algebra (𝔾₁,₃) to achieve full Lorentz equivariance."
    },
    {
-    "num": "6.1",
+    "num": "VI-A",
     "text": "Architectures such as CGENNs, GATr, L-GATr, and CSMPNs are equivariant by construction under the relevant Clifford-group, Euclidean, or Lorentz action."
    }
   ]
@@ -2013,14 +2013,14 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Euclidean GA (EGA) 𝔾₃,₀,₀ has basis vectors e₁, e₂, e₃ and is spanned by 2³=8 basis blades 1, e₁, e₂, e₃, e₁₂, e₁₃, e₂₃, e₁₂₃."
    }
   ]
@@ -2046,18 +2046,18 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Tasks involving rigid motions or incidence relations among affine objects therefore often require an augmented algebra such as PGA or CGA."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Projective GA (PGA) 𝔾₃,₀,₁ augments 3D Euclidean directions with a null basis vector e₀ where (e₀²=0), yielding 2⁴=16 basis blades."
    }
   ]
@@ -2084,22 +2084,22 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Projective GA (PGA) 𝔾₃,₀,₁ augments 3D Euclidean directions with a null basis vector e₀ where (e₀²=0), yielding 2⁴=16 basis blades."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Rigid transformations decompose into products of plane reflections: two intersecting planes give a rotation, two parallel planes a translation."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "This expressiveness comes at the cost of 32-dimensional multivectors and an indefinite metric, which can introduce numerical and implementation challenges in neural architectures."
    }
   ]
@@ -2127,18 +2127,18 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Conformal GA (CGA) 𝔾₄,₁,₀ embeds 3D Euclidean space into a 5D space with 2⁵=32 basis blades by introducing two additional directions, often represented through origin and infinity null vectors o and ∞."
    },
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "A Euclidean point p is embedded as a null vector p = o + p + 12p²∞, and the inner product between embedded points encodes squared Euclidean distance."
    }
   ]
@@ -2164,14 +2164,14 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "Spacetime Algebra (STA) 𝔾₁,₃,₀ models Minkowski spacetime using one timelike direction and three spacelike directions, with e₀²=1 and eₖ²=-1 for k=1,2,3."
    }
   ]
@@ -2199,14 +2199,14 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "STA is natural for relativistic systems, electromagnetism, and high-energy physics, but it is usually unnecessary for purely Euclidean 3D perception tasks."
    }
   ]
@@ -2235,14 +2235,14 @@
    "Foundations"
   ],
   "subsections": [
-   "2.2 Key Algebras"
+   "II-B Key Algebras"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "2.2",
+    "num": "II-B",
     "text": "STA is natural for relativistic systems, electromagnetism, and high-energy physics, but it is usually unnecessary for purely Euclidean 3D perception tasks."
    }
   ]
@@ -2270,14 +2270,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning"
+   "III-A Leveraging Symmetries in Deep Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "Incorporating known symmetries into neural architectures is a central strategy in GDL. Translation equivariance in convolutional networks, rotation equivariance in geometric and structural models, and permutation invariance or equivariance in point-set and graph models illustrate how architectural constraints can improve data efficiency, generalization under transformations, and robustness."
    }
   ]
@@ -2317,24 +2317,24 @@
    "Applications"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "4.5 GA-based Attention Mechanisms",
-   "5.2 Computational Biology and Chemistry"
+   "III-A Leveraging Symmetries in Deep Learning",
+   "IV-E GA-based Attention Mechanisms",
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.5",
+    "num": "IV-E",
     "text": "Clifford Frame Attention (CFA) extends the Invariant Point Attention (IPA) from AlphaFold2 for protein design."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "It replaces the invariant point attention (IPA) from AlphaFold2 with Clifford Frame Attention (CFA)."
    },
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "Incorporating known symmetries into neural architectures is a central strategy in GDL. Translation equivariance in convolutional networks, rotation equivariance in geometric and structural models, and permutation invariance or equivariance in point-set and graph models illustrate how architectural constraints can improve data efficiency, generalization under transformations, and robustness."
    }
   ]
@@ -2363,14 +2363,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning"
+   "III-A Leveraging Symmetries in Deep Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "Incorporating known symmetries into neural architectures is a central strategy in GDL. Translation equivariance in convolutional networks, rotation equivariance in geometric and structural models, and permutation invariance or equivariance in point-set and graph models illustrate how architectural constraints can improve data efficiency, generalization under transformations, and robustness."
    }
   ]
@@ -2401,14 +2401,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning"
+   "III-A Leveraging Symmetries in Deep Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "Incorporating known symmetries into neural architectures is a central strategy in GDL. Translation equivariance in convolutional networks, rotation equivariance in geometric and structural models, and permutation invariance or equivariance in point-set and graph models illustrate how architectural constraints can improve data efficiency, generalization under transformations, and robustness."
    }
   ]
@@ -2442,16 +2442,16 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.5 The Clifford Group and its Action in Equivariant Networks",
-   "4.1 Multivector Representations",
-   "4.6 Building GA-NN Architectures",
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family",
-   "6.3 Computational cost and scalability",
-   "6.4 Failure modes and limitations"
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-E The Clifford Group and its Action in Equivariant Networks",
+   "IV-A Multivector Representations",
+   "IV-F Building GA-NN Architectures",
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family",
+   "VI-C Computational cost and scalability",
+   "VI-D Failure modes and limitations"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -2461,22 +2461,22 @@
   "algebras": [
    "General"
   ],
-  "algebra_source": "§3.5 Clifford-group equivariant simplicial networks",
+  "algebra_source": "§III-E Clifford-group equivariant simplicial networks",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Extending CGENNs, Liu et al. introduce CSMPNs, which learn to embed higher-order simplices via geometric products and equivariant simplicial message passing."
    },
    {
-    "num": "6.1",
+    "num": "VI-A",
     "text": "Architectures such as CGENNs, GATr, L-GATr, and CSMPNs are equivariant by construction under the relevant Clifford-group, Euclidean, or Lorentz action."
    },
    {
-    "num": "6.1",
+    "num": "VI-A",
     "text": "In higher-order graph learning, CSMPN benefits from building simplex features algebraically via geometric products."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "CSMPN improves over simplicial and equivariant graph baselines on convex-hull and trajectory tasks, but also includes a useful negative result: for rigid planar benzene, extra geometric capacity does not help uniformly."
    }
   ]
@@ -2511,9 +2511,9 @@
    "Applications"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics"
+   "III-A Leveraging Symmetries in Deep Learning",
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [
    "tab:architecture_taxonomy"
@@ -2521,18 +2521,18 @@
   "algebras": [
    "General"
   ],
-  "algebra_source": "§4.6 pseudo-Euclidean E(p,q) equivariance",
+  "algebra_source": "§IV-F pseudo-Euclidean E(p,q) equivariance",
   "contexts": [
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "GA-native layers pursue the same goal through algebraic structure: multivector representations, geometric products, grade projections, and versor actions can be arranged so that features transform consistently under the target symmetry group."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Clifford-Steerable CNNs achieve equivariance to groups like Pseudo-Euclidean groups E(p,q) by parameterizing the steerable convolution kernels implicitly with a CGENN-style MLP, which learns the kernel's values as an equivariant function of the relative position vector."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "Clifford Convolutions and Clifford-Steerable CNNs generalize convolution to multivector fields, processing coupled quantities (e.g., scalar pressure and vector velocity) as unified objects via the geometric product."
    }
   ]
@@ -2566,11 +2566,11 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "4.6 Building GA-NN Architectures",
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications",
-   "6.2 Comparative evidence by application family"
+   "III-A Leveraging Symmetries in Deep Learning",
+   "IV-F Building GA-NN Architectures",
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -2581,19 +2581,19 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Similarly, Tran et al. propose CG-EGNNs, which combine a GA embedding layer with Clifford graph convolution layers."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "Multivector Neurons and CG-EGNN report gains on n-body, protein denoising, CMU motion, and MD17, though this evidence is still mostly preprint-era."
    },
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "GA-native layers pursue the same goal through algebraic structure: multivector representations, geometric products, grade projections, and versor actions can be arranged so that features transform consistently under the target symmetry group."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "In models like, the message and update functions are implemented as GA-NN blocks (e.g., CGENNs) or GA-based primitives (e.g., geometric products)."
    }
   ]
@@ -2624,32 +2624,32 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "4.6 Building GA-NN Architectures",
-   "5.2 Computational Biology and Chemistry",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family"
+   "III-A Leveraging Symmetries in Deep Learning",
+   "IV-F Building GA-NN Architectures",
+   "V-B Computational Biology and Chemistry",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [],
   "algebras": [
    "EGA"
   ],
-  "algebra_source": "§5.2 Euclidean GA for protein structure prediction",
+  "algebra_source": "§V-B Euclidean GA for protein structure prediction",
   "contexts": [
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "GA-native layers pursue the same goal through algebraic structure: multivector representations, geometric products, grade projections, and versor actions can be arranged so that features transform consistently under the target symmetry group."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Modern architectures build on this foundation with principled equivariance guarantees, forming the backbone of more complex models."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "GA's 3D equivariance, ability to encode higher-order geometry, and parameter efficiency make it a natural fit for computational biology and chemistry."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "A prominent application is protein design and structure, where GA provides an efficient framework to describe amino acid positions and orientations using higher-order multivector subspaces."
    }
   ]
@@ -2684,12 +2684,12 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning",
-   "3.5 The Clifford Group and its Action in Equivariant Networks",
-   "4.1 Multivector Representations",
-   "4.6 Building GA-NN Architectures",
-   "5.2 Computational Biology and Chemistry",
-   "6.2 Comparative evidence by application family"
+   "III-A Leveraging Symmetries in Deep Learning",
+   "III-E The Clifford Group and its Action in Equivariant Networks",
+   "IV-A Multivector Representations",
+   "IV-F Building GA-NN Architectures",
+   "V-B Computational Biology and Chemistry",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:architecture_taxonomy",
@@ -2698,22 +2698,22 @@
   "algebras": [
    "General"
   ],
-  "algebra_source": "§3.5 O(n)-equivariant multivector functions",
+  "algebra_source": "§III-E O(n)-equivariant multivector functions",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "CDMs use Clifford-EGNNs as latent encoders and perform diffusion and denoising entirely in GA space, operating on all multivector subspaces to capture rich geometric information and improve sample stability."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "To avoid expensive geometric product layers, Liu et al. propose cheaper, MLP-based models: Clifford-EGNN (an extension of EGNN), MVN-GNN (using multivector neurons), and MVP-GNN (using multivector perceptrons)."
    },
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "GA-native layers pursue the same goal through algebraic structure: multivector representations, geometric products, grade projections, and versor actions can be arranged so that features transform consistently under the target symmetry group."
    },
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "Ali et al. learn the underlying quadratic form while preserving Clifford-equivariant structure; Liu et al. use related polynomial constructions in simplicial architectures; Brandstetter et al. apply Clifford layers to PDE modeling; and Liu et al. implement grade-structured polynomial multivector functions for O(n)-equivariant architectures."
    }
   ]
@@ -2742,14 +2742,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.1 Leveraging Symmetries in Deep Learning"
+   "III-A Leveraging Symmetries in Deep Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.1",
+    "num": "III-A",
     "text": "A controlled GATr scaling study finds that augmentation can close the data-efficiency gap given sufficient epochs, while GATr outperforms non-equivariant models at every tested compute budget."
    }
   ]
@@ -2775,14 +2775,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra"
+   "III-C Achieving Equivariance with Geometric Algebra"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "In Euclidean GA 𝔾ₙ,₀,₀, rotations and reflections are represented through the associated Spin(n) and Pin(n) actions, which double-cover SO(n) and O(n), respectively."
    }
   ]
@@ -2809,14 +2809,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra"
+   "III-C Achieving Equivariance with Geometric Algebra"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "Operations such as geometric products, grade projections, and rotor actions can preserve SO(n)- or O(n)-covariance when used in architectures that respect these actions."
    }
   ]
@@ -2848,11 +2848,11 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications",
-   "6.2 Comparative evidence by application family",
-   "6.3 Computational cost and scalability"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications",
+   "VI-B Comparative evidence by application family",
+   "VI-C Computational cost and scalability"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -2861,22 +2861,22 @@
   "algebras": [
    "PGA"
   ],
-  "algebra_source": "§5.2 embeds meshes in PGA G(3,0,1)",
+  "algebra_source": "§V-B embeds meshes in PGA G(3,0,1)",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Following this, Suk et al. propose LaB-GATr for anatomical 3D meshes."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "The arterial WSS benchmark of Suk et al. appears in mesh neural networks, the original GATr work, the algebra-selection study of de Haan et al., and the LaB-GATr line."
    },
    {
-    "num": "6.3",
+    "num": "VI-C",
     "text": "LaB-GATr extends this to large biomedical meshes by compressing token sets while preserving Euclidean equivariance."
    },
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "The Geometric Algebra Transformer (GATr) and related models are among the architectures that use PGA-style multivectors for E(3)- or SE(3)-structured learning."
    }
   ]
@@ -2910,11 +2910,11 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications",
-   "6.2 Comparative evidence by application family",
-   "6.3 Computational cost and scalability"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications",
+   "VI-B Comparative evidence by application family",
+   "VI-C Computational cost and scalability"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -2923,22 +2923,22 @@
   "algebras": [
    "PGA"
   ],
-  "algebra_source": "§3.3 PGA-style models; Table 6 biomedical row",
+  "algebra_source": "§III-C PGA-style models; Table 6 biomedical row",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "LaB-GATr++ is an extension using cross-attention instead of message-passing pooling, achieving stronger accuracy and runtime on the same tasks."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Based on LaB-GATr, Alblas et al. develop a personalized growth prediction model for abdominal aortic aneurysms (AAAs), using local GA-embedded features to predict growth directly on the vascular surface."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "The arterial WSS benchmark of Suk et al. appears in mesh neural networks, the original GATr work, the algebra-selection study of de Haan et al., and the LaB-GATr line."
    },
    {
-    "num": "6.3",
+    "num": "VI-C",
     "text": "LaB-GATr extends this to large biomedical meshes by compressing token sets while preserving Euclidean equivariance."
    }
   ]
@@ -2973,12 +2973,12 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.6 Building GA-NN Architectures",
-   "5.4 Robotics",
-   "5.5 Other Notable Applications",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-F Building GA-NN Architectures",
+   "V-D Robotics",
+   "V-E Other Notable Applications",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -2988,22 +2988,22 @@
   "algebras": [
    "PGA"
   ],
-  "algebra_source": "§3.3 PGA-style models; §5.4 PGA-GATr",
+  "algebra_source": "§III-C PGA-style models; §V-D PGA-GATr",
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "GATr serves as the backbone for E(3)-invariant motion planning, and hPGA-DP integrates PGA-GATr into visuomotor diffusion policies for faster convergence and improved task performance."
    },
    {
-    "num": "6.1",
+    "num": "VI-A",
     "text": "In robotics, GAGrasp and hPGA-DP report faster convergence or stronger low-data behavior, though only within their own benchmarks."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "hPGA-DP reports faster convergence and better task performance than standard diffusion policies and architectures that rely only on P-GATr."
    },
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "The Geometric Algebra Transformer (GATr) and related models are among the architectures that use PGA-style multivectors for E(3)- or SE(3)-structured learning."
    }
   ]
@@ -3040,12 +3040,12 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "4.4 Activations and Normalizations",
-   "4.5 GA-based Attention Mechanisms",
-   "4.6 Building GA-NN Architectures",
-   "5.3 Physics-Informed Machine Learning",
-   "6.2 Comparative evidence by application family"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "IV-D Activations and Normalizations",
+   "IV-E GA-based Attention Mechanisms",
+   "IV-F Building GA-NN Architectures",
+   "V-C Physics-Informed Machine Learning",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:empirical_matrix"
@@ -3053,22 +3053,22 @@
   "algebras": [
    "STA"
   ],
-  "algebra_source": "§3.3; §4.6 (L-GATr in G(1,3,0))",
+  "algebra_source": "§III-C; §IV-F (L-GATr in G(1,3,0))",
   "contexts": [
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "Neural networks built using STA or Lorentzian GA variants, such as L-GATr, can be made equivariant to Lorentz transformations, which is central in relativistic physics."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "L-GATr extends the GATr framework to achieve Lorentz equivariance by employing Spacetime Algebra (𝔾₁,₃,₀)."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "In high-energy physics, L-GATr is competitive with or stronger than strong domain baselines on amplitude regression, jet classification, and Lorentz-equivariant generation."
    },
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "Another common strategy is to use the scalar part of a multivector to gate the entire multivector."
    }
   ]
@@ -3102,8 +3102,8 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "3.4 Comparison with Non-GA Equivariant Approaches"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "III-D Comparison with Non-GA Equivariant Approaches"
   ],
   "tables": [
    "tab:non_ga_comparison"
@@ -3112,11 +3112,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "GA-native models should therefore be understood as one route to geometry-aware learning, alongside non-GA equivariant approaches such as group-equivariant CNNs, steerable CNNs, Tensor Field Networks, and E(n)-equivariant GNNs."
    },
    {
-    "num": "3.4",
+    "num": "III-D",
     "text": "enumerate[leftmargin=*,itemsep=1pt] Standard E(3) tasks with scalar/vector point features. When the data consists of point clouds or graphs with primarily scalar and vector attributes and the target symmetry is E(3), mature non-GA methods, particularly E(n)-equivariant GNNs and steerable or tensor-field architectures, are strong defaults with well-optimized software stacks."
    }
   ]
@@ -3147,9 +3147,9 @@
    "Applications"
   ],
   "subsections": [
-   "3.3 Achieving Equivariance with Geometric Algebra",
-   "3.4 Comparison with Non-GA Equivariant Approaches",
-   "5.2 Computational Biology and Chemistry"
+   "III-C Achieving Equivariance with Geometric Algebra",
+   "III-D Comparison with Non-GA Equivariant Approaches",
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [
    "tab:non_ga_comparison"
@@ -3158,15 +3158,15 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "To avoid expensive geometric product layers, Liu et al. propose cheaper, MLP-based models: Clifford-EGNN (an extension of EGNN), MVN-GNN (using multivector neurons), and MVP-GNN (using multivector perceptrons)."
    },
    {
-    "num": "3.3",
+    "num": "III-C",
     "text": "GA-native models should therefore be understood as one route to geometry-aware learning, alongside non-GA equivariant approaches such as group-equivariant CNNs, steerable CNNs, Tensor Field Networks, and E(n)-equivariant GNNs."
    },
    {
-    "num": "3.4",
+    "num": "III-D",
     "text": "enumerate[leftmargin=*,itemsep=1pt] Standard E(3) tasks with scalar/vector point features. When the data consists of point clouds or graphs with primarily scalar and vector attributes and the target symmetry is E(3), mature non-GA methods, particularly E(n)-equivariant GNNs and steerable or tensor-field architectures, are strong defaults with well-optimized software stacks."
    }
   ]
@@ -3200,14 +3200,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.4 Comparison with Non-GA Equivariant Approaches"
+   "III-D Comparison with Non-GA Equivariant Approaches"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.4",
+    "num": "III-D",
     "text": "For instance, Lorentz local canonicalization (LLoCa) makes arbitrary backbones Lorentz-equivariant via equivariantly predicted local frames and reports lower training cost than L-GATr."
    }
   ]
@@ -3234,14 +3234,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.5 The Clifford Group and its Action in Equivariant Networks"
+   "III-E The Clifford Group and its Action in Equivariant Networks"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "A more formal route to GA-native equivariance is through the Clifford group, also called the Lipschitz or Clifford–Lipschitz group."
    }
   ]
@@ -3267,14 +3267,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.5 The Clifford Group and its Action in Equivariant Networks"
+   "III-E The Clifford Group and its Action in Equivariant Networks"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "A more formal route to GA-native equivariance is through the Clifford group, also called the Lipschitz or Clifford–Lipschitz group."
    }
   ]
@@ -3303,20 +3303,20 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.5 The Clifford Group and its Action in Equivariant Networks"
+   "III-E The Clifford Group and its Action in Equivariant Networks"
   ],
   "tables": [],
   "algebras": [
    "General"
   ],
-  "algebra_source": "§3.5 learned quadratic form",
+  "algebra_source": "§III-E learned quadratic form",
   "contexts": [
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "In common conventions, this action takes the form x ↦ g x g⁻¹ or x ↦ α(g)xg⁻¹, where α denotes the grade involution."
    },
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "Ali et al. learn the underlying quadratic form while preserving Clifford-equivariant structure; Liu et al. use related polynomial constructions in simplicial architectures; Brandstetter et al. apply Clifford layers to PDE modeling; and Liu et al. implement grade-structured polynomial multivector functions for O(n)-equivariant architectures."
    }
   ]
@@ -3343,14 +3343,14 @@
    "Equivariance"
   ],
   "subsections": [
-   "3.5 The Clifford Group and its Action in Equivariant Networks"
+   "III-E The Clifford Group and its Action in Equivariant Networks"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "In common conventions, this action takes the form x ↦ g x g⁻¹ or x ↦ α(g)xg⁻¹, where α denotes the grade involution."
    }
   ]
@@ -3380,8 +3380,8 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "3.5 The Clifford Group and its Action in Equivariant Networks",
-   "4.6 Building GA-NN Architectures"
+   "III-E The Clifford Group and its Action in Equivariant Networks",
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [
    "tab:architecture_taxonomy"
@@ -3389,10 +3389,10 @@
   "algebras": [
    "General"
   ],
-  "algebra_source": "§3.5 generalized Lipschitz groups incl. degenerate algebras",
+  "algebra_source": "§III-E generalized Lipschitz groups incl. degenerate algebras",
   "contexts": [
    {
-    "num": "3.5",
+    "num": "III-E",
     "text": "Filimoshina and Shirokov build parameter-light GLGENNs on generalized Lipschitz groups that also cover degenerate algebras such as PGA, sharing weights across grade subspaces."
    }
   ]
@@ -3422,21 +3422,21 @@
    "Applications"
   ],
   "subsections": [
-   "4.1 Multivector Representations",
-   "5.1 Computer Vision and Graphics"
+   "IV-A Multivector Representations",
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§4.1 null-point embedding; §5.1 RANSAC detection",
+  "algebra_source": "§IV-A null-point embedding; §V-A RANSAC detection",
   "contexts": [
    {
-    "num": "4.1",
+    "num": "IV-A",
     "text": "CGA (𝔾ₙ₊₁,₁,₀) embeds Euclidean space into a higher-dimensional algebra in which null-point inner products encode squared Euclidean distance up to convention-dependent sign and scale."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "CGA (𝔾₍₄,₁,₀₎) represents geometric primitives as single blades, enabling RANSAC-based detection of planes, spheres, and cylinders."
    }
   ]
@@ -3464,14 +3464,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.3 Transformation-based Layers"
+   "IV-C Transformation-based Layers"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.3",
+    "num": "IV-C",
     "text": "Beyond geometric feature processing, Pence et al. use compositions of rotors to construct structured approximations of linear transformations."
    }
   ]
@@ -3500,14 +3500,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.4 Activations and Normalizations"
+   "IV-D Activations and Normalizations"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "GATr employs a scalar-gated GELU: GELU(⟨ x ångle₀) x, which preserves equivariance if the scalar part is invariant and the multiplication is the GA geometric product or scalar multiplication."
    }
   ]
@@ -3537,14 +3537,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.4 Activations and Normalizations"
+   "IV-D Activations and Normalizations"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "More advanced, algebra-aware activations have been proposed, such as the GA-ReLU."
    }
   ]
@@ -3577,14 +3577,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.4 Activations and Normalizations"
+   "IV-D Activations and Normalizations"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "Recently, the Kolmogorov-Arnold representation theorem has been adapted to multivector spaces via Clifford Kolmogorov-Arnold Networks (ClKAN)."
    }
   ]
@@ -3615,14 +3615,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.4 Activations and Normalizations"
+   "IV-D Activations and Normalizations"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "Recently, the Kolmogorov-Arnold representation theorem has been adapted to multivector spaces via Clifford Kolmogorov-Arnold Networks (ClKAN)."
    }
   ]
@@ -3651,14 +3651,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.4 Activations and Normalizations"
+   "IV-D Activations and Normalizations"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "Standard techniques like BatchNorm are not equivariant."
    }
   ]
@@ -3687,14 +3687,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.4 Activations and Normalizations"
+   "IV-D Activations and Normalizations"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "CGENNs and GCANs use variants of GroupNorm or custom norm-based schemes that normalize each k-vector component of a multivector across channels, again preserving the grade structure by only involving subtraction of an average k-vector and scalar division/multiplication."
    }
   ]
@@ -3724,14 +3724,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.4 Activations and Normalizations"
+   "IV-D Activations and Normalizations"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.4",
+    "num": "IV-D",
     "text": "GATr employs a LayerNorm defined using the GA inner product: x/E_c [⟨ x ḑot x ångle₀], which is invariant."
    }
   ]
@@ -3764,19 +3764,19 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.5 GA-based Attention Mechanisms",
-   "4.6 Building GA-NN Architectures"
+   "IV-E GA-based Attention Mechanisms",
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.5",
+    "num": "IV-E",
     "text": "With the success of Transformer architectures, attention mechanisms have been adapted for GA NNs."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The Transformer architecture, with its attention mechanism, has revolutionized sequence processing and is increasingly applied to other data modalities."
    }
   ]
@@ -3812,19 +3812,19 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.5 GA-based Attention Mechanisms",
-   "4.6 Building GA-NN Architectures"
+   "IV-E GA-based Attention Mechanisms",
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.5",
+    "num": "IV-E",
     "text": "With the success of Transformer architectures, attention mechanisms have been adapted for GA NNs."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The Transformer architecture, with its attention mechanism, has revolutionized sequence processing and is increasingly applied to other data modalities."
    }
   ]
@@ -3853,28 +3853,28 @@
    "Applications"
   ],
   "subsections": [
-   "4.5 GA-based Attention Mechanisms",
-   "5.1 Computer Vision and Graphics",
-   "5.2 Computational Biology and Chemistry"
+   "IV-E GA-based Attention Mechanisms",
+   "V-A Computer Vision and Graphics",
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "In early work, Spellings propose Geometric Algebra Attention Networks (GAANs), using a rotationally invariant and permutationally equivariant attention mechanism based on geometric products."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Spellings also applies GAANs to protein coarse-graining backmapping."
    },
    {
-    "num": "4.5",
+    "num": "IV-E",
     "text": "Geometric Algebra Attention Networks compute attention scores from the geometric products of all input vector tuples (pairs, triplets, etc.)."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "For learned features, Geometric Algebra Attention Networks generate rotationally invariant and covariant features via geometric products."
    }
   ]
@@ -3900,14 +3900,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The earliest attempts to integrate Clifford algebras into neural networks viewed them as generalizations of complex-valued or quaternion-valued networks."
    }
   ]
@@ -3935,14 +3935,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The earliest attempts to integrate Clifford algebras into neural networks viewed them as generalizations of complex-valued or quaternion-valued networks."
    }
   ]
@@ -3970,7 +3970,7 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [
    "tab:architecture_taxonomy"
@@ -3979,7 +3979,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The earliest attempts to integrate Clifford algebras into neural networks viewed them as generalizations of complex-valued or quaternion-valued networks."
    }
   ]
@@ -4005,14 +4005,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The earliest attempts to integrate Clifford algebras into neural networks viewed them as generalizations of complex-valued or quaternion-valued networks."
    }
   ]
@@ -4039,14 +4039,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The earliest attempts to integrate Clifford algebras into neural networks viewed them as generalizations of complex-valued or quaternion-valued networks."
    }
   ]
@@ -4073,14 +4073,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The earliest attempts to integrate Clifford algebras into neural networks viewed them as generalizations of complex-valued or quaternion-valued networks."
    }
   ]
@@ -4107,14 +4107,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Pearson and Bisset proposed Clifford MLPs for pattern recognition, and Buchholz and Sommer further investigated Clifford neurons and learning rules."
    }
   ]
@@ -4141,7 +4141,7 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [
    "tab:architecture_taxonomy"
@@ -4150,7 +4150,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Pearson and Bisset proposed Clifford MLPs for pattern recognition, and Buchholz and Sommer further investigated Clifford neurons and learning rules."
    }
   ]
@@ -4177,14 +4177,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Pearson and Bisset proposed Clifford MLPs for pattern recognition, and Buchholz and Sommer further investigated Clifford neurons and learning rules."
    }
   ]
@@ -4211,14 +4211,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Pearson and Bisset proposed Clifford MLPs for pattern recognition, and Buchholz and Sommer further investigated Clifford neurons and learning rules."
    }
   ]
@@ -4248,30 +4248,30 @@
    "Outlook"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.5 Other Notable Applications"
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-E Other Notable Applications"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.1 integrates CGA with language models",
+  "algebra_source": "§V-A integrates CGA with language models",
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Modern architectures build on this foundation with principled equivariance guarantees, forming the backbone of more complex models."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "In graphics, Gunn shows that GA transformations yield more numerically stable shader programs than matrices, and Kolyvakis et al. integrate CGA with language models for text-driven 3D scene editing."
    },
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "Emerging interdisciplinary applications include CGA-based interfaces with language models for spatial instruction execution, GA multivectors as word embeddings, randomized GA methods for LLM fine-tuning, and GA networks for IoT anomaly detection on microcontrollers."
    },
    {
-    "num": "8",
+    "num": "VIII",
     "text": "GA could serve as a geometric interface for embodied AI and language models, mapping symbolic instructions into continuous transformations."
    }
   ]
@@ -4307,9 +4307,9 @@
    "Applications"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.5 Other Notable Applications"
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-E Other Notable Applications"
   ],
   "tables": [
    "tab:application_crosswalk"
@@ -4318,11 +4318,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "GA-CNNs further proposes representing different spectral bands of a hyperspectral image (HSI) as components of a GA multivector."
    },
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "In hyperspectral imaging, GA-CNN represents spectral bands as multivector components for holistic cross-band learning, recently extended to anomaly detection."
    }
   ]
@@ -4354,14 +4354,14 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Similarly, Clifford Fourier Layers replace the standard Fast Fourier Transform (FFT) with a Clifford-Fourier Transform, enabling spectral methods on multivector fields."
    }
   ]
@@ -4389,27 +4389,27 @@
    "Applications"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures",
-   "5.2 Computational Biology and Chemistry"
+   "IV-F Building GA-NN Architectures",
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Similarly, Clifford Fourier Layers replace the standard Fast Fourier Transform (FFT) with a Clifford-Fourier Transform, enabling spectral methods on multivector fields."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "GA's 3D equivariance, ability to encode higher-order geometry, and parameter efficiency make it a natural fit for computational biology and chemistry."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "By preserving symmetries, GA-based models can simulate realistic thermodynamic behavior accurately and efficiently."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Beyond MD, Alfarraj et al. use GA to generate molecular surfaces."
    }
   ]
@@ -4439,7 +4439,7 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [
    "tab:architecture_taxonomy",
@@ -4449,7 +4449,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Conditional CS-CNNs (C-CSCNN) show that this kernel basis is incomplete and improve expressivity by conditioning kernels on equivariant representations of the input field."
    }
   ]
@@ -4480,18 +4480,18 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "ViNE-GATr addresses the scalability of E(3)-equivariant transformers by projecting dense geometric data into a coarse-grained latent space of virtual nodes."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "The Geometric Algebra Transformer (GATr) family adapts this powerful paradigm for geometric data using GA. This family represents a significant advancement by combining the scalability and expressiveness of Transformers with the principled geometric equivariance provided by GA. The original GATr is designed to be a general-purpose E(3)-equivariant architecture."
    }
   ]
@@ -4520,16 +4520,16 @@
    "Layers & architectures"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures"
+   "IV-F Building GA-NN Architectures"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§4.6 replaces sequence operations with CGA",
+  "algebra_source": "§IV-F replaces sequence operations with CGA",
   "contexts": [
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "In core sequence modeling, Versor replaces traditional linear vector sequence operations with CGA operations to inherently respect the symmetries of the physical universe, combating the \"Euclidean Bottleneck\"."
    }
   ]
@@ -4561,9 +4561,9 @@
    "Applications"
   ],
   "subsections": [
-   "4.6 Building GA-NN Architectures",
-   "5.1 Computer Vision and Graphics",
-   "5.5 Other Notable Applications"
+   "IV-F Building GA-NN Architectures",
+   "V-A Computer Vision and Graphics",
+   "V-E Other Notable Applications"
   ],
   "tables": [
    "tab:application_crosswalk"
@@ -4572,11 +4572,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "In 3D shape representation, GA-Planes parameterizes volumetric features on multivector “tensor planes,” becoming the first implicit neural volume model trainable via convex optimization, with competitive results on radiance field reconstruction, 3D segmentation, and video representation."
    },
    {
-    "num": "4.6",
+    "num": "IV-F",
     "text": "Beyond these general architectural classes, GA is also being incorporated into models tailored for specific, complex geometric tasks, such as protein design, implicit neural volumes, and grasp generation."
    }
   ]
@@ -4604,14 +4604,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "GA unifies these, making it a natural substrate for geometrically-aware models."
    }
   ]
@@ -4637,19 +4637,19 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics",
-   "5.4 Robotics"
+   "V-A Computer Vision and Graphics",
+   "V-D Robotics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "GA unifies these, making it a natural substrate for geometrically-aware models."
    },
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "Early work by Bayro-Corrochano et al. developed quaternion spiking neural networks for robot motion interpolation, but these were relatively small-scale."
    }
   ]
@@ -4676,16 +4676,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.1",
+  "algebra_source": "§V-A",
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "Pepe et al. use CGA (𝔾₍₄,₀₎) to represent SE(3) pose as a motor, an 8-parameter even-grade multivector encoding both rotation and translation, improving accuracy over Cartesian parametrizations."
    }
   ]
@@ -4716,14 +4716,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "Earlier work applied GA to indoor scene modeling and UAV-based 3D reconstruction."
    }
   ]
@@ -4751,14 +4751,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "Earlier work applied GA to indoor scene modeling and UAV-based 3D reconstruction."
    }
   ]
@@ -4784,14 +4784,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "In graphics, Gunn shows that GA transformations yield more numerically stable shader programs than matrices, and Kolyvakis et al. integrate CGA with language models for text-driven 3D scene editing."
    }
   ]
@@ -4817,16 +4817,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.1 CGA primitive detection",
+  "algebra_source": "§V-A CGA primitive detection",
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "CGA (𝔾₍₄,₁,₀₎) represents geometric primitives as single blades, enabling RANSAC-based detection of planes, spheres, and cylinders."
    }
   ]
@@ -4854,16 +4854,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.1 CGA primitive detection",
+  "algebra_source": "§V-A CGA primitive detection",
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "CGA (𝔾₍₄,₁,₀₎) represents geometric primitives as single blades, enabling RANSAC-based detection of planes, spheres, and cylinders."
    }
   ]
@@ -4893,14 +4893,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "CS-CNNs achieve full E(p,q) equivariance by parameterizing steerable kernels with a CGENN-style MLP. For optical flow, GA-DDVM restricts diffusion to 2D vector fields with scaling and rotation operations, lowering KITTI and Sintel endpoint error relative to a matched DDVM baseline."
    }
   ]
@@ -4928,14 +4928,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "CliffordNet restructures vision backbones using the geometric product as a unified interaction mechanism with 𝒪(N) complexity."
    }
   ]
@@ -4966,14 +4966,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "In hyperspectral imaging, GA-CNN represents spectral bands as multivector components for holistic cross-band learning, recently extended to anomaly detection."
    }
   ]
@@ -5004,14 +5004,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.1 Computer Vision and Graphics"
+   "V-A Computer Vision and Graphics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.1",
+    "num": "V-A",
     "text": "RGA-CNNs similarly exploit geometric correlations for object detection and denoising."
    }
   ]
@@ -5046,8 +5046,8 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications"
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications"
   ],
   "tables": [
    "tab:application_crosswalk"
@@ -5058,11 +5058,11 @@
   "algebra_source": "Table 6 biomedical-mesh row (PGA)",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "GA's 3D equivariance, ability to encode higher-order geometry, and parameter efficiency make it a natural fit for computational biology and chemistry."
    },
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Based on LaB-GATr, Alblas et al. develop a personalized growth prediction model for abdominal aortic aneurysms (AAAs), using local GA-embedded features to predict growth directly on the vascular surface."
    }
   ]
@@ -5093,24 +5093,24 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry",
-   "6.1 What transfers across the literature",
-   "6.2 Comparative evidence by application family"
+   "V-B Computational Biology and Chemistry",
+   "VI-A What transfers across the literature",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Separately, de Haan et al. proposed several GATr variants (E-GATr, P-GATr, iP-GATr, and C-GATr) and tested them on the WSS prediction task."
    },
    {
-    "num": "6.1",
+    "num": "VI-A",
     "text": "On arterial wall-shear-stress estimation, GATr is strongest on non-canonicalized meshes in the benchmark of Suk et al., where the model must handle arbitrary orientation directly."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "The arterial WSS benchmark of Suk et al. appears in mesh neural networks, the original GATr work, the algebra-selection study of de Haan et al., and the LaB-GATr line."
    }
   ]
@@ -5143,8 +5143,8 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications"
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications"
   ],
   "tables": [
    "tab:application_crosswalk",
@@ -5156,7 +5156,7 @@
   "algebra_source": "Table 6 biomedical-mesh row (PGA)",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "AB-GATr is competitive with LaB-GATr at lower training cost and outperforms augmented non-equivariant hemodynamic baselines, though strong canonical alignment can favor non-equivariant models on ShapeNet-Car."
    }
   ]
@@ -5188,14 +5188,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Finally, Rao et al. use a GATr-like algorithm (SNGNN-BTGO) to extract features from MRI scans for brain tumor diagnosis, where GA's multidimensional representation helps distinguish between tumor types."
    }
   ]
@@ -5226,14 +5226,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Another common application is molecular dynamics (MD), where the goal is to predict molecule energy and trajectories."
    }
   ]
@@ -5262,14 +5262,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Extending CGENNs, Liu et al. introduce CSMPNs, which learn to embed higher-order simplices via geometric products and equivariant simplicial message passing."
    }
   ]
@@ -5298,8 +5298,8 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications"
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications"
   ],
   "tables": [
    "tab:application_crosswalk"
@@ -5308,7 +5308,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "More recently, GA-GNN embeds all node attributes into a single multivector representation and relies entirely on geometric product layers as the core update mechanism."
    }
   ]
@@ -5339,8 +5339,8 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry",
-   "5.5 Other Notable Applications"
+   "V-B Computational Biology and Chemistry",
+   "V-E Other Notable Applications"
   ],
   "tables": [
    "tab:application_crosswalk"
@@ -5348,10 +5348,10 @@
   "algebras": [
    "EGA"
   ],
-  "algebra_source": "§5.2 G(3,0,0) interatomic potentials",
+  "algebra_source": "§V-B G(3,0,0) interatomic potentials",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "CliffordIP builds O(3)-equivariant 𝔾₃,₀,₀ interatomic potentials for heterogeneous catalysis without spherical harmonics, reducing energy MAE by 20–24% over the next-best baseline on adsorbate subsets."
    }
   ]
@@ -5377,14 +5377,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Their method uses the Clifford-Fourier transform, implemented via a Fast Clifford-Fourier transform (FCFT), to produce surfaces free of geometric singularities."
    }
   ]
@@ -5412,16 +5412,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.2 backbone modelled in CGA",
+  "algebra_source": "§V-B backbone modelled in CGA",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "The same authors also used CGA for PSP, modeling the backbone in CGA and applying their architecture to predict cost maps, which measure relative amino acid orientations."
    }
   ]
@@ -5451,16 +5451,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.2 CGA Transformer",
+  "algebra_source": "§V-B CGA Transformer",
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Hockey et al. introduce CGA Transformer, a GATr variant, for PSP, specifically to predict amino acid inter-residue distances without directly predicting coordinates."
    }
   ]
@@ -5487,14 +5487,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "This task reverses coarse-graining to recover original coordinates."
    }
   ]
@@ -5521,14 +5521,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Additionally, Alfarraj et al. propose a GA-based method for protein-protein docking, finding that rotors and the geometric product can express rotations more efficiently than traditional methods."
    }
   ]
@@ -5554,14 +5554,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Additionally, Alfarraj et al. propose a GA-based method for protein-protein docking, finding that rotors and the geometric product can express rotations more efficiently than traditional methods."
    }
   ]
@@ -5591,14 +5591,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "Beyond proteins, RBFN introduces a multivector parameterization for RNA, which conditions a Bayesian Flow Network with a novel time-step sampling distribution."
    }
   ]
@@ -5627,14 +5627,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "This geometric enhancement allows RBFN to effectively align the sequence distribution with the underlying RNA backbone structure, achieving superior sequence recovery rates over both standard deep learning baselines (e.g., gRNAde) and physics-based tools like Rosetta."
    }
   ]
@@ -5661,14 +5661,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.2 Computational Biology and Chemistry"
+   "V-B Computational Biology and Chemistry"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.2",
+    "num": "V-B",
     "text": "This geometric enhancement allows RBFN to effectively align the sequence distribution with the underlying RNA backbone structure, achieving superior sequence recovery rates over both standard deep learning baselines (e.g., gRNAde) and physics-based tools like Rosetta."
    }
   ]
@@ -5699,14 +5699,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.3 Physics-Informed Machine Learning"
+   "V-C Physics-Informed Machine Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.3",
+    "num": "V-C",
     "text": "Physics-Informed Machine Learning (PIML) seeks models consistent with known physical laws."
    }
   ]
@@ -5738,14 +5738,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.3 Physics-Informed Machine Learning"
+   "V-C Physics-Informed Machine Learning"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.3",
+    "num": "V-C",
     "text": "Physics-Informed Machine Learning (PIML) seeks models consistent with known physical laws."
    }
   ]
@@ -5773,16 +5773,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.4 Robotics"
+   "V-D Robotics"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.4 CGA inverse kinematics",
+  "algebra_source": "§V-D CGA inverse kinematics",
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "Classical robotics uses CGA for closed-form inverse kinematics of manipulators with spherical wrists, including 6-DOF and 7-DOF redundant arms, where forward kinematics is expressed as a chain of motors."
    }
   ]
@@ -5810,16 +5810,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.4 Robotics"
+   "V-D Robotics"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.4 CGA inverse kinematics",
+  "algebra_source": "§V-D CGA inverse kinematics",
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "Classical robotics uses CGA for closed-form inverse kinematics of manipulators with spherical wrists, including 6-DOF and 7-DOF redundant arms, where forward kinematics is expressed as a chain of motors."
    }
   ]
@@ -5847,16 +5847,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.4 Robotics"
+   "V-D Robotics"
   ],
   "tables": [],
   "algebras": [
    "CGA"
   ],
-  "algebra_source": "§5.4 kinematics as chains of motors (CGA)",
+  "algebra_source": "§V-D kinematics as chains of motors (CGA)",
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "Classical robotics uses CGA for closed-form inverse kinematics of manipulators with spherical wrists, including 6-DOF and 7-DOF redundant arms, where forward kinematics is expressed as a chain of motors."
    }
   ]
@@ -5883,14 +5883,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.4 Robotics"
+   "V-D Robotics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "This framework has been extended to optimal control, but the limitations of analytic solvers motivate learning-based alternatives."
    }
   ]
@@ -5921,14 +5921,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.4 Robotics"
+   "V-D Robotics"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "This framework has been extended to optimal control, but the limitations of analytic solvers motivate learning-based alternatives."
    }
   ]
@@ -5961,16 +5961,16 @@
    "Applications"
   ],
   "subsections": [
-   "5.4 Robotics"
+   "V-D Robotics"
   ],
   "tables": [],
   "algebras": [
    "PGA"
   ],
-  "algebra_source": "§5.4 2D PGA G(2,0,1)",
+  "algebra_source": "§V-D 2D PGA G(2,0,1)",
   "contexts": [
    {
-    "num": "5.4",
+    "num": "V-D",
     "text": "For self-driving, DriveGATr encodes scene elements in 2D PGA (𝔾₂,₀,₁) for SE(2)-equivariant agent modeling, replacing costly pairwise relative positional encodings with standard multivector attention."
    }
   ]
@@ -6003,8 +6003,8 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "5.5 Other Notable Applications",
-   "6.2 Comparative evidence by application family"
+   "V-E Other Notable Applications",
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:application_crosswalk"
@@ -6013,11 +6013,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "In temporal and signal processing, GA-LSTNet represents each time-step as a multivector encapsulating all sensor channels, modeling joint dynamics more effectively than channel-wise models."
    },
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "GGAN reports strong graph-representation-learning results with reduced model complexity, and GA-LSTNet argues that multivector recurrent states improve multivariate time-series modeling by preserving inter-channel structure."
    }
   ]
@@ -6047,14 +6047,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.5 Other Notable Applications"
+   "V-E Other Notable Applications"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "Parametrized Hypercomplex NNs provide a unified framework that automatically infers the optimal algebra (complex, quaternion, or higher-dimensional Clifford) for a given dataset, operating with fewer parameters."
    }
   ]
@@ -6086,14 +6086,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.5 Other Notable Applications"
+   "V-E Other Notable Applications"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "Wi-GATr applies GATr to wireless signal propagation, predicting channel observations from scene meshes and antenna poses, with lower real-world error than hybrid methods and a calibrated ray tracer."
    }
   ]
@@ -6119,14 +6119,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.5 Other Notable Applications"
+   "V-E Other Notable Applications"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "Emerging interdisciplinary applications include CGA-based interfaces with language models for spatial instruction execution, GA multivectors as word embeddings, randomized GA methods for LLM fine-tuning, and GA networks for IoT anomaly detection on microcontrollers."
    }
   ]
@@ -6156,14 +6156,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.5 Other Notable Applications"
+   "V-E Other Notable Applications"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "Emerging interdisciplinary applications include CGA-based interfaces with language models for spatial instruction execution, GA multivectors as word embeddings, randomized GA methods for LLM fine-tuning, and GA networks for IoT anomaly detection on microcontrollers."
    }
   ]
@@ -6193,14 +6193,14 @@
    "Applications"
   ],
   "subsections": [
-   "5.5 Other Notable Applications"
+   "V-E Other Notable Applications"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "5.5",
+    "num": "V-E",
     "text": "Emerging interdisciplinary applications include CGA-based interfaces with language models for spatial instruction execution, GA multivectors as word embeddings, randomized GA methods for LLM fine-tuning, and GA networks for IoT anomaly detection on microcontrollers."
    }
   ]
@@ -6229,7 +6229,7 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "6.2 Comparative evidence by application family"
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [
    "tab:empirical_matrix"
@@ -6240,7 +6240,7 @@
   "algebra_source": "Table 7 HEP row (L-GATr)",
   "contexts": [
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "Large-scale jet-tagging studies find that Lorentz-equivariant transformers outperform standard ones when geometric features matter, and on precision unfolding and anomaly-detection tasks L-GATr performs comparably to the pretrained foundation model OmniLearn."
    }
   ]
@@ -6272,16 +6272,16 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "6.2 Comparative evidence by application family"
+   "VI-B Comparative evidence by application family"
   ],
   "tables": [],
   "algebras": [
    "STA"
   ],
-  "algebra_source": "§6.2 (L-GATr)",
+  "algebra_source": "§VI-B (L-GATr)",
   "contexts": [
    {
-    "num": "6.2",
+    "num": "VI-B",
     "text": "Large-scale jet-tagging studies find that Lorentz-equivariant transformers outperform standard ones when geometric features matter, and on precision unfolding and anomaly-detection tasks L-GATr performs comparably to the pretrained foundation model OmniLearn."
    }
   ]
@@ -6310,16 +6310,16 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "6.4 Failure modes and limitations"
+   "VI-D Failure modes and limitations"
   ],
   "tables": [],
   "algebras": [
    "EGA"
   ],
-  "algebra_source": "§6.4 G(3,0,0) products",
+  "algebra_source": "§VI-D G(3,0,0) products",
   "contexts": [
    {
-    "num": "6.4",
+    "num": "VI-D",
     "text": "Expressivity can also be structurally limited: vector–vector geometric products in 𝔾₃,₀,₀ lack the rank-2 (L=2) component, which limits force-direction accuracy in tested Clifford interatomic potentials."
    }
   ]
@@ -6348,16 +6348,16 @@
    "Empirical evidence"
   ],
   "subsections": [
-   "6.4 Failure modes and limitations"
+   "VI-D Failure modes and limitations"
   ],
   "tables": [],
   "algebras": [
    "STA"
   ],
-  "algebra_source": "§6.4 (L-GATr jet taggers)",
+  "algebra_source": "§VI-D (L-GATr jet taggers)",
   "contexts": [
    {
-    "num": "6.4",
+    "num": "VI-D",
     "text": "Nevertheless, slim and quantized L-GATr jet taggers are estimated to cut inference energy by an order of magnitude at a moderate performance loss."
    }
   ]
@@ -6385,8 +6385,8 @@
    "Software"
   ],
   "subsections": [
-   "7.1 ML Libraries: PyTorch, TensorFlow, and JAX",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-A ML Libraries: PyTorch, TensorFlow, and JAX",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6395,11 +6395,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.1",
+    "num": "VII-A",
     "text": "The primary ML-facing libraries are torch_ga (PyTorch) and tfga (TensorFlow), which both represent multivectors as framework tensors and provide Keras-style layers such as GeometricSandwichProductDense (analogous to Keras's Dense)."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "ML-facing libraries such as tfga (unmaintained since 2023) and torch_ga are immature: APIs remain rough, and higher-dimensional convolutions are not yet supported."
    }
   ]
@@ -6427,8 +6427,8 @@
    "Software"
   ],
   "subsections": [
-   "7.1 ML Libraries: PyTorch, TensorFlow, and JAX",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-A ML Libraries: PyTorch, TensorFlow, and JAX",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6437,11 +6437,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.1",
+    "num": "VII-A",
     "text": "The primary ML-facing libraries are torch_ga (PyTorch) and tfga (TensorFlow), which both represent multivectors as framework tensors and provide Keras-style layers such as GeometricSandwichProductDense (analogous to Keras's Dense)."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "ML-facing libraries such as tfga (unmaintained since 2023) and torch_ga are immature: APIs remain rough, and higher-dimensional convolutions are not yet supported."
    }
   ]
@@ -6469,7 +6469,7 @@
    "Software"
   ],
   "subsections": [
-   "7.1 ML Libraries: PyTorch, TensorFlow, and JAX"
+   "VII-A ML Libraries: PyTorch, TensorFlow, and JAX"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6478,7 +6478,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.1",
+    "num": "VII-A",
     "text": "numga targets JAX (with NumPy/PyTorch fallbacks) and symbolically fuses GA operations into optimized linear operators at compile time; for example, it can deduce that the product of two quaternions remains a quaternion."
    }
   ]
@@ -6543,7 +6543,7 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries"
+   "VII-B General Purpose Libraries"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6552,7 +6552,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "Among scripting tools, ganja.js is a lightweight JavaScript code generator with visualization and cross-language export; clifford is a mature Python numerical toolkit; and Kingdon adds symbolic computation accepting numpy, PyTorch, and sympy."
    }
   ]
@@ -6580,7 +6580,7 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries"
+   "VII-B General Purpose Libraries"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6589,7 +6589,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "Among scripting tools, ganja.js is a lightweight JavaScript code generator with visualization and cross-language export; clifford is a mature Python numerical toolkit; and Kingdon adds symbolic computation accepting numpy, PyTorch, and sympy."
    }
   ]
@@ -6621,7 +6621,7 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries"
+   "VII-B General Purpose Libraries"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6630,7 +6630,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "Among scripting tools, ganja.js is a lightweight JavaScript code generator with visualization and cross-language export; clifford is a mature Python numerical toolkit; and Kingdon adds symbolic computation accepting numpy, PyTorch, and sympy."
    }
   ]
@@ -6658,8 +6658,8 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-B General Purpose Libraries",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6673,11 +6673,11 @@
   "algebra_source": "Table 8 algebra scope",
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "In C++, Versor and GATL use template meta-programming for compile-time optimization; Klein provides SIMD-optimized 3D PGA; Garamon generates code for user-defined algebras; and TbGAL uses tensor-based blade representations for higher-dimensional performance."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "The 2ⁿ scaling of basis blades limits most libraries to moderate dimensions: Gaalop, Garamon, GluCat, and Versor support at most 16-, 20-, 16-, and 7-dimensional spaces, respectively."
    }
   ]
@@ -6709,7 +6709,7 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries"
+   "VII-B General Purpose Libraries"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6718,7 +6718,7 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "In C++, Versor and GATL use template meta-programming for compile-time optimization; Klein provides SIMD-optimized 3D PGA; Garamon generates code for user-defined algebras; and TbGAL uses tensor-based blade representations for higher-dimensional performance."
    }
   ]
@@ -6746,8 +6746,8 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-B General Purpose Libraries",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6758,11 +6758,11 @@
   "algebra_source": "Table 8 (3D PGA only)",
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "In C++, Versor and GATL use template meta-programming for compile-time optimization; Klein provides SIMD-optimized 3D PGA; Garamon generates code for user-defined algebras; and TbGAL uses tensor-based blade representations for higher-dimensional performance."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "Highly optimized libraries like Klein sacrifice generality."
    }
   ]
@@ -6790,8 +6790,8 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-B General Purpose Libraries",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6800,11 +6800,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "Gaalop compiles GA expressions into optimized C++, OpenCL, or CUDA code."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "The 2ⁿ scaling of basis blades limits most libraries to moderate dimensions: Gaalop, Garamon, GluCat, and Versor support at most 16-, 20-, 16-, and 7-dimensional spaces, respectively."
    }
   ]
@@ -6834,8 +6834,8 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-B General Purpose Libraries",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6844,11 +6844,11 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "In C++, Versor and GATL use template meta-programming for compile-time optimization; Klein provides SIMD-optimized 3D PGA; Garamon generates code for user-defined algebras; and TbGAL uses tensor-based blade representations for higher-dimensional performance."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "The 2ⁿ scaling of basis blades limits most libraries to moderate dimensions: Gaalop, Garamon, GluCat, and Versor support at most 16-, 20-, 16-, and 7-dimensional spaces, respectively."
    }
   ]
@@ -6877,8 +6877,8 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-B General Purpose Libraries",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [
    "tab:software_ecosystem"
@@ -6887,19 +6887,19 @@
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "In C++, Versor and GATL use template meta-programming for compile-time optimization; Klein provides SIMD-optimized 3D PGA; Garamon generates code for user-defined algebras; and TbGAL uses tensor-based blade representations for higher-dimensional performance."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "Alternatives such as TbGAL's tensor-based approach and custom GPU kernels are promising for higher-dimensional algebras."
    },
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "Benchmarking studies show GATL and Versor generally perform best, depending on operation mix and algebra dimension."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "More broadly, GA's steep learning curve, inconsistent cross-library APIs, sparse documentation, and limited benchmarking remain barriers to wider adoption."
    }
   ]
@@ -6927,19 +6927,19 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-B General Purpose Libraries",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "Gaalop compiles GA expressions into optimized C++, OpenCL, or CUDA code."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "The 2ⁿ scaling of basis blades limits most libraries to moderate dimensions: Gaalop, Garamon, GluCat, and Versor support at most 16-, 20-, 16-, and 7-dimensional spaces, respectively."
    }
   ]
@@ -6965,19 +6965,19 @@
    "Software"
   ],
   "subsections": [
-   "7.2 General Purpose Libraries",
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-B General Purpose Libraries",
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.2",
+    "num": "VII-B",
     "text": "Benchmarking studies show GATL and Versor generally perform best, depending on operation mix and algebra dimension."
    },
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "More broadly, GA's steep learning curve, inconsistent cross-library APIs, sparse documentation, and limited benchmarking remain barriers to wider adoption."
    }
   ]
@@ -7005,14 +7005,14 @@
    "Software"
   ],
   "subsections": [
-   "7.3 Challenges and Future Needs for Software Support"
+   "VII-C Challenges and Future Needs for Software Support"
   ],
   "tables": [],
   "algebras": [],
   "algebra_source": null,
   "contexts": [
    {
-    "num": "7.3",
+    "num": "VII-C",
     "text": "The 2ⁿ scaling of basis blades limits most libraries to moderate dimensions: Gaalop, Garamon, GluCat, and Versor support at most 16-, 20-, 16-, and 7-dimensional spaces, respectively."
    }
   ]

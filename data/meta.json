@@ -82,176 +82,176 @@
  ],
  "outline": [
   {
-   "num": "1",
+   "num": "I",
    "title": "Introduction",
    "short": "Introduction",
    "subs": [
     {
-     "num": "1.1",
+     "num": "I-A",
      "title": "Survey Methodology"
     }
    ]
   },
   {
-   "num": "2",
+   "num": "II",
    "title": "Foundational Concepts: GA for NNs",
    "short": "Foundations",
    "subs": [
     {
-     "num": "2.1",
+     "num": "II-A",
      "title": "GA Fundamentals"
     },
     {
-     "num": "2.2",
+     "num": "II-B",
      "title": "Key Algebras"
     },
     {
-     "num": "2.3",
+     "num": "II-C",
      "title": "Representing Geometry and Transformations"
     },
     {
-     "num": "2.4",
+     "num": "II-D",
      "title": "Algebra Selection Guide"
     }
    ]
   },
   {
-   "num": "3",
+   "num": "III",
    "title": "GDL Principles: Equivariance and Symmetries",
    "short": "Equivariance",
    "subs": [
     {
-     "num": "3.1",
+     "num": "III-A",
      "title": "Leveraging Symmetries in Deep Learning"
     },
     {
-     "num": "3.2",
+     "num": "III-B",
      "title": "Foundational Group Theory for Equivariance"
     },
     {
-     "num": "3.3",
+     "num": "III-C",
      "title": "Achieving Equivariance with Geometric Algebra"
     },
     {
-     "num": "3.4",
+     "num": "III-D",
      "title": "Comparison with Non-GA Equivariant Approaches"
     },
     {
-     "num": "3.5",
+     "num": "III-E",
      "title": "The Clifford Group and its Action in Equivariant Networks"
     }
    ]
   },
   {
-   "num": "4",
+   "num": "IV",
    "title": "GA NN Layers",
    "short": "Layers & architectures",
    "subs": [
     {
-     "num": "4.1",
+     "num": "IV-A",
      "title": "Multivector Representations"
     },
     {
-     "num": "4.2",
+     "num": "IV-B",
      "title": "GA-Parametrized Linear and Bilinear Layers"
     },
     {
-     "num": "4.3",
+     "num": "IV-C",
      "title": "Transformation-based Layers"
     },
     {
-     "num": "4.4",
+     "num": "IV-D",
      "title": "Activations and Normalizations"
     },
     {
-     "num": "4.5",
+     "num": "IV-E",
      "title": "GA-based Attention Mechanisms"
     },
     {
-     "num": "4.6",
+     "num": "IV-F",
      "title": "Building GA-NN Architectures"
     }
    ]
   },
   {
-   "num": "5",
+   "num": "V",
    "title": "Applications",
    "short": "Applications",
    "subs": [
     {
-     "num": "5.1",
+     "num": "V-A",
      "title": "Computer Vision and Graphics"
     },
     {
-     "num": "5.2",
+     "num": "V-B",
      "title": "Computational Biology and Chemistry"
     },
     {
-     "num": "5.3",
+     "num": "V-C",
      "title": "Physics-Informed Machine Learning"
     },
     {
-     "num": "5.4",
+     "num": "V-D",
      "title": "Robotics"
     },
     {
-     "num": "5.5",
+     "num": "V-E",
      "title": "Other Notable Applications"
     }
    ]
   },
   {
-   "num": "6",
+   "num": "VI",
    "title": "Empirical Studies",
    "short": "Empirical evidence",
    "subs": [
     {
-     "num": "6.1",
+     "num": "VI-A",
      "title": "What transfers across the literature"
     },
     {
-     "num": "6.2",
+     "num": "VI-B",
      "title": "Comparative evidence by application family"
     },
     {
-     "num": "6.3",
+     "num": "VI-C",
      "title": "Computational cost and scalability"
     },
     {
-     "num": "6.4",
+     "num": "VI-D",
      "title": "Failure modes and limitations"
     },
     {
-     "num": "6.5",
+     "num": "VI-E",
      "title": "Summary of evidence status"
     },
     {
-     "num": "6.6",
+     "num": "VI-F",
      "title": "Recommended benchmarking practice"
     }
    ]
   },
   {
-   "num": "7",
+   "num": "VII",
    "title": "Software Libraries and Implementation",
    "short": "Software",
    "subs": [
     {
-     "num": "7.1",
+     "num": "VII-A",
      "title": "ML Libraries: PyTorch, TensorFlow, and JAX"
     },
     {
-     "num": "7.2",
+     "num": "VII-B",
      "title": "General Purpose Libraries"
     },
     {
-     "num": "7.3",
+     "num": "VII-C",
      "title": "Challenges and Future Needs for Software Support"
     }
    ]
   },
   {
-   "num": "8",
+   "num": "VIII",
    "title": "Future Directions and Conclusion",
    "short": "Outlook",
    "subs": []

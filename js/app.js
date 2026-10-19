@@ -386,7 +386,7 @@
         const b = h('button', { type: 'button', class: 'chip', 'aria-pressed': String(s.sections.has(o.short)) },
           `${esc(o.short)} <span class="n">${n}</span>`);
         b.addEventListener('click', () => {
-          if (s.sections.has(o.short)) { s.sections.delete(o.short); [...s.subs].filter((x) => x.startsWith(o.num + '.')).forEach((x) => s.subs.delete(x)); }
+          if (s.sections.has(o.short)) { s.sections.delete(o.short); [...s.subs].filter((x) => x.startsWith(o.num + '-')).forEach((x) => s.subs.delete(x)); }
           else s.sections.add(o.short);
           this.limit = 30; this.update();
         });
@@ -526,7 +526,7 @@
         </div>`;
       $$('[data-sub]', li).forEach((b) => b.addEventListener('click', () => {
         const sub = b.dataset.sub;
-        const sec = meta.outline.find((o) => sub.startsWith(o.num + '.'));
+        const sec = meta.outline.find((o) => sub.startsWith(o.num + '-'));
         this.state.pin = null;
         if (sec) this.state.sections.add(sec.short);
         this.state.subs.add(sub);
