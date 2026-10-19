@@ -379,7 +379,7 @@ a.lib:hover { border-color: var(--orange); }
 .footer p { margin: 0; font-size: .9rem; color: var(--muted); max-width: 62ch; }
 .lab { display: flex; gap: 14px; align-items: center; text-decoration: none; color: var(--ink); font: 400 14px/1.35 var(--sans); }
 .lab strong { font-weight: 600; }
-.lab-logo { height: 44px; width: auto; }
+.lab-logo { height: 56px; width: auto; }
 .lab-logo-dark { display: none; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .lab-logo-light { display: none; }
