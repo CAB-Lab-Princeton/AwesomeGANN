@@ -44,9 +44,6 @@
       const ok = await copyText($(b.dataset.copy).textContent);
       toast(ok ? b.dataset.copied || 'Copied' : 'Copy failed. Select the text and copy it manually.');
     }));
-    $$('[aria-disabled="true"]').forEach((a) => a.addEventListener('click', (e) => {
-      e.preventDefault(); toast('The preprint link will appear here once it is on arXiv.');
-    }));
   }
 
   function initTheme() {

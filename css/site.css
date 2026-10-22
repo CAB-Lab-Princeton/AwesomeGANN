@@ -119,8 +119,7 @@ h3 { font-size: 1.08rem; font-weight: 600; }
 .btn:hover { border-color: var(--ink-2); }
 .btn-primary { background: var(--orange); border-color: var(--orange); color: var(--on-orange); }
 .btn-primary:hover { border-color: var(--ink); }
-.btn[aria-disabled="true"] { cursor: default; }
-.soon { font-size: 12px; font-weight: 500; padding: 1px 7px; border-radius: 999px; background: rgba(255, 255, 255, .55); }
+.pill { font-size: 12px; font-weight: 500; padding: 1px 7px; border-radius: 999px; background: rgba(255, 255, 255, .55); }
 .hero-lede { margin: 0; max-width: 60ch; font-size: 1.08rem; color: var(--ink-2); border-left: 3px solid var(--orange); padding-left: 16px; }
 .hero-stats { display: flex; flex-wrap: wrap; gap: 14px 32px; margin: 28px 0 0; }
 .hero-stats div { min-width: 0; display: flex; flex-direction: column-reverse; }
@@ -379,7 +378,7 @@ a.lib:hover { border-color: var(--orange); }
 .footer p { margin: 0; font-size: .9rem; color: var(--muted); max-width: 62ch; }
 .lab { display: flex; gap: 14px; align-items: center; text-decoration: none; color: var(--ink); font: 400 14px/1.35 var(--sans); }
 .lab strong { font-weight: 600; }
-.lab-logo { height: 56px; width: auto; }
+.lab-logo { height: 48px; width: auto; }
 .lab-logo-dark { display: none; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .lab-logo-light { display: none; }

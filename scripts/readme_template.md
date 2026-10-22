@@ -2,6 +2,7 @@
 
 # Awesome Geometric Algebra Neural Networks
 
+[![arXiv](https://img.shields.io/badge/arXiv-2610.30121-b31b1b)](https://arxiv.org/abs/2610.30121)
 [![Project page](https://img.shields.io/badge/project%20page-live-E77500)]({{SITE}})
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Works](https://img.shields.io/badge/works-{{N_PAPERS}}-2A9D8F)](#contents)
@@ -11,7 +12,7 @@ A curated list of geometric algebra (Clifford algebra) neural networks, companio
 > **Geometric Algebra for Neural Networks: A Survey**<br>
 > [Tao Zhong](https://taozhong.info/), [Kaison Fong](https://www.linkedin.com/in/kaison-fong-153a51350/), [Keqin Wang](https://www.linkedin.com/in/wang-keqin-1b284618a/), [Christine Allen-Blanchette](https://cablab.scholar.princeton.edu/people)<br>
 > Princeton University, Stanford University<br>
-> arXiv: coming soon
+> [arXiv:2610.30121](https://arxiv.org/abs/2610.30121)
 
 **Interactive version: [{{SITE}}]({{SITE}})**. Filter the literature by survey section, algebra (EGA, PGA, CGA, STA) and year; read the sentence the survey uses to place each work; pick an algebra for your task; browse architecture families, the empirical evidence map and software libraries.
 
@@ -65,8 +66,9 @@ Deployment: GitHub Pages serves the repository root from the `main` branch (*Set
 @article{zhong2026geometric,
   title   = {Geometric Algebra for Neural Networks: A Survey},
   author  = {Zhong, Tao and Fong, Kaison and Wang, Keqin and Allen-Blanchette, Christine},
-  journal = {arXiv preprint arXiv:TBD},
-  year    = {2026}
+  journal = {arXiv preprint arXiv:2610.30121},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2610.30121}
 }
 ```
 
